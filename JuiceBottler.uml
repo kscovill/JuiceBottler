@@ -1,0 +1,705 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:UMLLabProfile="http:///schemas/UMLLabProfile/NS/0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/UMLLabProfile/NS/0 pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile">
+  <uml:Model xmi:id="_RNuLYKpvEee0e-homK-IiA" name="JuiceBottler">
+    <eAnnotations xmi:id="_RXrYoKpvEee0e-homK-IiA" source="http://ns.yatta.de/umllab">
+      <contents xmi:type="ecore:EAnnotation" xmi:id="_RXr_sKpvEee0e-homK-IiA" source="codegen">
+        <details xmi:id="_RXr_sapvEee0e-homK-IiA" key="codegenDirectory" value="/JuiceBottler/src"/>
+        <details xmi:id="_SAY-cKpvEee0e-homK-IiA" key="AssociatedSourceCode" value="/JuiceBottler/src/AssemblyLine.java;2388252934/1;/JuiceBottler/src/Orange.java;1029464590/1;/JuiceBottler/src/Plant.java;2158673391/1;/JuiceBottler/src/Worker.java;1553587166/1;"/>
+      </contents>
+    </eAnnotations>
+    <elementImport xmi:id="_RkRqMKpvEee0e-homK-IiA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+    </elementImport>
+    <elementImport xmi:id="_RkRqMapvEee0e-homK-IiA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+    </elementImport>
+    <elementImport xmi:id="_RkRqMqpvEee0e-homK-IiA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+    </elementImport>
+    <elementImport xmi:id="_RkRqM6pvEee0e-homK-IiA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+    </elementImport>
+    <elementImport xmi:id="_RkRqNKpvEee0e-homK-IiA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+    </elementImport>
+    <elementImport xmi:id="_RkSRQKpvEee0e-homK-IiA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </elementImport>
+    <elementImport xmi:id="_RkSRQapvEee0e-homK-IiA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+    </elementImport>
+    <elementImport xmi:id="_RkSRQqpvEee0e-homK-IiA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#short"/>
+    </elementImport>
+    <elementImport xmi:id="_RkS4UKpvEee0e-homK-IiA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </elementImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_Rjg1MKpvEee0e-homK-IiA" name="java">
+      <packagedElement xmi:type="uml:Package" xmi:id="_Rjg1MapvEee0e-homK-IiA" name="util">
+        <packagedElement xmi:type="uml:Class" xmi:id="_Rmrd8KpvEee0e-homK-IiA" name="ArrayList"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_Rmt6MKpvEee0e-homK-IiA" name="List"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_Rm9x0KpvEee0e-homK-IiA" name="lang">
+        <packagedElement xmi:type="uml:Class" xmi:id="_Rm9x0apvEee0e-homK-IiA" name="Thread"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_RnBcMKpvEee0e-homK-IiA" name="Runnable"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_RkMKoKpvEee0e-homK-IiA" name="AssemblyLine">
+      <generalization xmi:id="_Rm-_8apvEee0e-homK-IiA" general="_Rm9x0apvEee0e-homK-IiA"/>
+      <ownedAttribute xmi:id="_RnLNMKpvEee0e-homK-IiA" name="oranges" visibility="private" isLeaf="true" type="_RkaNEKpvEee0e-homK-IiA" isOrdered="true" isReadOnly="true" association="_RntYsKpvEee0e-homK-IiA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RnL0QKpvEee0e-homK-IiA" value="*"/>
+      </ownedAttribute>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_RngkYKpvEee0e-homK-IiA" name="AssemblyLine" specification="_RkTfYKpvEee0e-homK-IiA">
+        <ownedParameter xmi:id="_RnhLcKpvEee0e-homK-IiA" type="_RkMKoKpvEee0e-homK-IiA" direction="return">
+          <name xsi:nil="true"/>
+        </ownedParameter>
+        <language>java</language>
+        <body>oranges = new ArrayList&lt;Orange>();&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_RnjnsKpvEee0e-homK-IiA" name="addOrange" specification="_RmwWcKpvEee0e-homK-IiA">
+        <ownedParameter xmi:id="_RnjnsapvEee0e-homK-IiA" name="o" type="_RkaNEKpvEee0e-homK-IiA"/>
+        <language>java</language>
+        <body>oranges.add(o);&#xD;
+		if (countOranges() >= 1) {&#xD;
+			notifyAll();&#xD;
+		}&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_RnjnsqpvEee0e-homK-IiA" name="getOrange" specification="_RkV7oKpvEee0e-homK-IiA">
+        <ownedParameter xmi:id="_Rnjns6pvEee0e-homK-IiA" type="_RkaNEKpvEee0e-homK-IiA" direction="return">
+          <name xsi:nil="true"/>
+        </ownedParameter>
+        <language>java</language>
+        <body>while (countOranges() == 0) {&#xD;
+			try {&#xD;
+				wait();&#xD;
+			} catch (InterruptedException ignored) {&#xD;
+			}&#xD;
+		}&#xD;
+		// Fix for needing a removeOrange() method provided by Cordell Anderson&#xD;
+		return oranges.remove(0);&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_RnkOwKpvEee0e-homK-IiA" name="countOranges" specification="_RkWisKpvEee0e-homK-IiA">
+        <ownedParameter xmi:id="_RnkOwapvEee0e-homK-IiA" direction="return">
+          <name xsi:nil="true"/>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <language>java</language>
+        <body>return oranges.size();&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedOperation xmi:id="_RkTfYKpvEee0e-homK-IiA" name="AssemblyLine" method="_RngkYKpvEee0e-homK-IiA">
+        <eAnnotations xmi:id="_RkUtgKpvEee0e-homK-IiA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details xmi:id="_RkUtgapvEee0e-homK-IiA" key="create"/>
+        </eAnnotations>
+        <ownedComment xmi:id="_byjaQKqqEeeAkbNgY_9L2Q">
+          <body>Initialize the arraylist as a new arraylist for each conveyor belt.</body>
+        </ownedComment>
+        <ownedParameter xmi:id="_RkVUkKpvEee0e-homK-IiA" type="_RkMKoKpvEee0e-homK-IiA" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_RkV7oKpvEee0e-homK-IiA" name="getOrange" method="_RnjnsqpvEee0e-homK-IiA">
+        <eAnnotations xmi:id="_RkV7oapvEee0e-homK-IiA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details xmi:id="_RkV7oqpvEee0e-homK-IiA" key="synchronized"/>
+        </eAnnotations>
+        <ownedComment xmi:id="_bylPcKqqEeeAkbNgY_9L2Q">
+          <body>Gets the first orange in the sequence&#xD;
+	 * &#xD;
+	 * @return</body>
+        </ownedComment>
+        <ownedParameter xmi:id="_Rmw9gKpvEee0e-homK-IiA" type="_RkaNEKpvEee0e-homK-IiA" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_RkWisKpvEee0e-homK-IiA" name="countOranges" method="_RnkOwKpvEee0e-homK-IiA">
+        <eAnnotations xmi:id="_RkXJwKpvEee0e-homK-IiA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details xmi:id="_RkXJwapvEee0e-homK-IiA" key="synchronized"/>
+        </eAnnotations>
+        <ownedComment xmi:id="_byl2gKqqEeeAkbNgY_9L2Q">
+          <body>Count the total number of oranges in the ArrayList&#xD;
+	 * &#xD;
+	 * @return</body>
+        </ownedComment>
+        <ownedParameter xmi:id="_RkXJwqpvEee0e-homK-IiA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_RmwWcKpvEee0e-homK-IiA" name="addOrange" method="_RnjnsKpvEee0e-homK-IiA">
+        <eAnnotations xmi:id="_RmwWcqpvEee0e-homK-IiA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details xmi:id="_RmwWc6pvEee0e-homK-IiA" key="synchronized"/>
+        </eAnnotations>
+        <ownedComment xmi:id="_bykoYKqqEeeAkbNgY_9L2Q">
+          <body>Add an orange to the ArrayList&#xD;
+	 * &#xD;
+	 * @param o</body>
+        </ownedComment>
+        <ownedParameter xmi:id="_RmwWcapvEee0e-homK-IiA" name="o" type="_RkaNEKpvEee0e-homK-IiA"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_RkaNEKpvEee0e-homK-IiA" name="Orange">
+      <ownedAttribute xmi:id="_RnQFsKpvEee0e-homK-IiA" name="state" type="_RkbbMKpvEee0e-homK-IiA" isReadOnly="true"/>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Rnk11KpvEee0e-homK-IiA" name="Orange" specification="_Rkhh0KpvEee0e-homK-IiA">
+        <ownedParameter xmi:id="_Rnk11apvEee0e-homK-IiA" type="_RkaNEKpvEee0e-homK-IiA" direction="return"/>
+        <language>java</language>
+        <body>state = State.Fetched;&#xD;
+		doWork();&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Rnlc4KpvEee0e-homK-IiA" name="runProcess" specification="_RkiI46pvEee0e-homK-IiA">
+        <language>java</language>
+        <body>// Don't attempt to process an already completed orange&#xD;
+		if (state == State.Processed) {&#xD;
+			throw new IllegalStateException(&quot;This orange has already been processed&quot;);&#xD;
+		}&#xD;
+		state = state.getNext();&#xD;
+		doWork();&#xD;
+&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Rnlc4apvEee0e-homK-IiA" name="doWork" specification="_Rkiv8KpvEee0e-homK-IiA">
+        <language>java</language>
+        <body>// Sleep for the amount of time necessary to do the work&#xD;
+		try {&#xD;
+			Thread.sleep(state.timeToComplete);&#xD;
+		} catch (InterruptedException e) {&#xD;
+			System.err.println(&quot;Incomplete orange processing, juice may be bad&quot;);&#xD;
+		}&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedOperation xmi:id="_Rkhh0KpvEee0e-homK-IiA" name="Orange" method="_Rnk11KpvEee0e-homK-IiA">
+        <eAnnotations xmi:id="_RkiI4KpvEee0e-homK-IiA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details xmi:id="_RkiI4apvEee0e-homK-IiA" key="create"/>
+        </eAnnotations>
+        <ownedParameter xmi:id="_RkiI4qpvEee0e-homK-IiA" type="_RkaNEKpvEee0e-homK-IiA" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_RkiI46pvEee0e-homK-IiA" name="runProcess" method="_Rnlc4KpvEee0e-homK-IiA"/>
+      <ownedOperation xmi:id="_Rkiv8KpvEee0e-homK-IiA" name="doWork" visibility="private" method="_Rnlc4apvEee0e-homK-IiA"/>
+      <nestedClassifier xmi:type="uml:Enumeration" xmi:id="_RkbbMKpvEee0e-homK-IiA" name="State">
+        <ownedAttribute xmi:id="_RnNpcKpvEee0e-homK-IiA" name="finalIndex" visibility="private" isLeaf="true" isStatic="true" isReadOnly="true">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_RnOQgKpvEee0e-homK-IiA" value="State.values().length - 1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_RnO3kKpvEee0e-homK-IiA" name="timeToComplete" visibility="package" isLeaf="true" isReadOnly="true">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedAttribute>
+        <ownedOperation xmi:id="_Rkd3cKpvEee0e-homK-IiA" name="State" visibility="package" method="_RnkOwqpvEee0e-homK-IiA">
+          <eAnnotations xmi:id="_RkeegapvEee0e-homK-IiA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_RkeegqpvEee0e-homK-IiA" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_RkeegKpvEee0e-homK-IiA" name="timeToComplete">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_Rkeeg6pvEee0e-homK-IiA" type="_RkbbMKpvEee0e-homK-IiA" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_RkfFkKpvEee0e-homK-IiA" name="getNext" visibility="package" method="_Rnk10qpvEee0e-homK-IiA">
+          <ownedParameter xmi:id="_RmzZwKpvEee0e-homK-IiA" type="_RkbbMKpvEee0e-homK-IiA" direction="return"/>
+        </ownedOperation>
+        <ownedLiteral xmi:id="_RkcCQKpvEee0e-homK-IiA" name="Fetched">
+          <specification xmi:type="uml:Expression" xmi:id="_RkcCQapvEee0e-homK-IiA">
+            <operand xmi:type="uml:LiteralString" xmi:id="_RnpuUKpvEee0e-homK-IiA" value="15"/>
+          </specification>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_RkcCQqpvEee0e-homK-IiA" name="Peeled">
+          <specification xmi:type="uml:Expression" xmi:id="_RkcCQ6pvEee0e-homK-IiA">
+            <operand xmi:type="uml:LiteralString" xmi:id="_RnpuUapvEee0e-homK-IiA" value="38"/>
+          </specification>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_RkcCRKpvEee0e-homK-IiA" name="Squeezed">
+          <specification xmi:type="uml:Expression" xmi:id="_RkcpUKpvEee0e-homK-IiA">
+            <operand xmi:type="uml:LiteralString" xmi:id="_RnpuUqpvEee0e-homK-IiA" value="29"/>
+          </specification>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_RkcpUapvEee0e-homK-IiA" name="Bottled">
+          <specification xmi:type="uml:Expression" xmi:id="_RkcpUqpvEee0e-homK-IiA">
+            <operand xmi:type="uml:LiteralString" xmi:id="_RnqVYKpvEee0e-homK-IiA" value="17"/>
+          </specification>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_RkcpU6pvEee0e-homK-IiA" name="Processed">
+          <specification xmi:type="uml:Expression" xmi:id="_RkcpVKpvEee0e-homK-IiA">
+            <operand xmi:type="uml:LiteralString" xmi:id="_RnqVYapvEee0e-homK-IiA" value="1"/>
+          </specification>
+        </ownedLiteral>
+      </nestedClassifier>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_RklMMKpvEee0e-homK-IiA" name="Plant">
+      <ownedAttribute xmi:id="_RnQswKpvEee0e-homK-IiA" name="PROCESSING_TIME" isLeaf="true" isStatic="true" isReadOnly="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_RnQswapvEee0e-homK-IiA" value="5 * 1000"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_RnRT0KpvEee0e-homK-IiA" name="lines" isStatic="true" type="_RkMKoKpvEee0e-homK-IiA" association="_Rnt_wapvEee0e-homK-IiA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RnRT0apvEee0e-homK-IiA" value="*"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_RnR64KpvEee0e-homK-IiA" value="new AssemblyLine[4]"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_RnSh8KpvEee0e-homK-IiA" name="NUM_PLANTS" isLeaf="true" isStatic="true" isReadOnly="true">
+        <eAnnotations xmi:id="_RnSh8apvEee0e-homK-IiA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details xmi:id="_RnSh8qpvEee0e-homK-IiA" key="ConstantWithGetter"/>
+        </eAnnotations>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_RnSh86pvEee0e-homK-IiA" value="2"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_RnTJAKpvEee0e-homK-IiA" name="ORANGES_PER_BOTTLE" isLeaf="true" isReadOnly="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_RnTJAapvEee0e-homK-IiA" value="3"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_RnTwEKpvEee0e-homK-IiA" name="worker" isStatic="true" type="_RkvkQKpvEee0e-homK-IiA" association="_Rnum0apvEee0e-homK-IiA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RnTwEapvEee0e-homK-IiA" value="*"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_RnUXIKpvEee0e-homK-IiA" value="new Worker[5]"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_RnU-MapvEee0e-homK-IiA" name="thread" visibility="private" isLeaf="true" type="_Rm9x0apvEee0e-homK-IiA" isReadOnly="true" association="_Rnv08KpvEee0e-homK-IiA"/>
+      <ownedAttribute xmi:id="_RnVlQapvEee0e-homK-IiA" name="orangesProvided" isStatic="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RnVlQqpvEee0e-homK-IiA" value="*"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_RnWMUKpvEee0e-homK-IiA" value="new int[1]"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_RnWMUqpvEee0e-homK-IiA" name="orangesProcessed" isStatic="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RnWMU6pvEee0e-homK-IiA" value="*"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_RnWzYapvEee0e-homK-IiA" value="new int[1]"/>
+      </ownedAttribute>
+      <interfaceRealization xmi:id="_RnFGkKpvEee0e-homK-IiA" client="_RklMMKpvEee0e-homK-IiA" supplier="_RnBcMKpvEee0e-homK-IiA" contract="_RnBcMKpvEee0e-homK-IiA"/>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Rnlc4qpvEee0e-homK-IiA" name="main" specification="_RkmaUKpvEee0e-homK-IiA">
+        <ownedParameter xmi:id="_Rnlc46pvEee0e-homK-IiA" name="args">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Rnlc5KpvEee0e-homK-IiA" value="*"/>
+        </ownedParameter>
+        <language>java</language>
+        <body>// Startup the plants
+		Plant[] plants = new Plant[NUM_PLANTS];
+		
+		for (int i = 0; i &lt; 4; i++) {
+			lines[i] = new AssemblyLine();
+		}
+		
+		for (int i = 0; i &lt; NUM_PLANTS; i++) {
+			try {
+				Thread.sleep(20);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			plants[i] = new Plant();
+			plants[i].startPlant();
+		}
+
+		
+
+		// Give the plants time to do work
+		delay(PROCESSING_TIME, &quot;Plant malfunction&quot;);
+
+		// Stop the plant, and wait for it to shutdown
+		for (Plant p : plants) {
+			p.stopPlant();
+		}
+		for (Plant p : plants) {
+			p.waitToStop();
+		}
+		
+		// Wait for workers to stop
+		for(int i = 0; i &lt; 5; i++) {
+			worker[i].waitToStop();
+		}
+
+		// Summarize the results
+		int totalProvided = 0;
+		int totalProcessed = 0;
+		int totalBottles = 0;
+		int totalWasted = 0;
+		for (Plant p : plants) {
+			totalProvided += p.getProvidedOranges();
+			totalProcessed += p.getProcessedOranges();
+			totalBottles += p.getBottles();
+			totalWasted += p.getWaste();
+		}
+		System.out.println(&quot;Total provided/processed = &quot; + totalProvided + &quot;/&quot; + totalProcessed);
+		System.out.println(&quot;Created &quot; + totalBottles + &quot;, wasted &quot; + totalWasted + &quot; oranges&quot;);
+		System.exit(1);
+	</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Rnlc5apvEee0e-homK-IiA" name="delay" specification="_RknBYKpvEee0e-homK-IiA">
+        <ownedParameter xmi:id="_Rnlc5qpvEee0e-homK-IiA" name="time">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_Rnlc56pvEee0e-homK-IiA" name="errMsg">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <language>java</language>
+        <body>long sleepTime = Math.max(1, time);
+		try {
+			Thread.sleep(sleepTime);
+		} catch (InterruptedException e) {
+			System.err.println(errMsg);
+		}
+	</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_RnmD8KpvEee0e-homK-IiA" name="Plant" specification="_RkoPgKpvEee0e-homK-IiA">
+        <ownedParameter xmi:id="_RnmD8apvEee0e-homK-IiA" type="_RklMMKpvEee0e-homK-IiA" direction="return">
+          <name xsi:nil="true"/>
+        </ownedParameter>
+        <language>java</language>
+        <body>orangesProvided[0] = 0;
+		orangesProcessed[0] = 0;
+		thread = new Thread(this, &quot;Master&quot;);
+	</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_RnmD8qpvEee0e-homK-IiA" name="startPlant" specification="_Rko2kqpvEee0e-homK-IiA">
+        <language>java</language>
+        <body>thread.start();
+	</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_RnmD86pvEee0e-homK-IiA" name="stopPlant" specification="_RkpdoKpvEee0e-homK-IiA">
+        <language>java</language>
+        <body>for(int i = 0; i &lt; 5; i++) {
+			worker[i].stopWorker();
+		}
+		
+		for(int i = 0; i &lt; 5; i++) {
+			worker[i].waitToStop();
+		}
+		
+	</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_RnmD9KpvEee0e-homK-IiA" name="waitToStop" specification="_RkpdoapvEee0e-homK-IiA">
+        <language>java</language>
+        <body>try {
+			thread.join();
+			//System.out.println(&quot;Plant has died( should be 2 )&quot;);
+		} catch (InterruptedException e) {
+			System.err.println(thread.getName() + &quot; stop malfunction&quot;);
+		}
+	</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_RnmD9apvEee0e-homK-IiA" name="run" specification="_RkpdoqpvEee0e-homK-IiA">
+        <language>java</language>
+        <body>//System.out.println(&quot;The &quot; + Thread.currentThread().getName() + &quot; has begun to buy slaves&quot;);
+
+		worker[0] = new Worker(null, lines[0], 0);
+		worker[0].startWorker();
+		worker[0].thread.start();
+		for (int i = 1; i &lt; 4; i++) {
+			worker[i] = new Worker(lines[i - 1], lines[i], i);
+			worker[i].startWorker();
+			worker[i].thread.start();
+		}
+		worker[4] = new Worker(lines[3], null, 4);
+		worker[4].startWorker();
+		worker[4].thread.start();
+	</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_RnmrAKpvEee0e-homK-IiA" name="getProvidedOranges" specification="_RkqEsKpvEee0e-homK-IiA">
+        <ownedParameter xmi:id="_RnmrAapvEee0e-homK-IiA" direction="return">
+          <name xsi:nil="true"/>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <language>java</language>
+        <body>return orangesProvided[0];
+	</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_RnmrAqpvEee0e-homK-IiA" name="getProcessedOranges" specification="_RkqrwKpvEee0e-homK-IiA">
+        <ownedParameter xmi:id="_RnmrA6pvEee0e-homK-IiA" direction="return">
+          <name xsi:nil="true"/>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <language>java</language>
+        <body>return orangesProcessed[0];
+	</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_RnmrBKpvEee0e-homK-IiA" name="getBottles" specification="_RkqrwqpvEee0e-homK-IiA">
+        <ownedParameter xmi:id="_RnmrBapvEee0e-homK-IiA" direction="return">
+          <name xsi:nil="true"/>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <language>java</language>
+        <body>return orangesProcessed[0] / ORANGES_PER_BOTTLE;
+	</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_RnmrBqpvEee0e-homK-IiA" name="getWaste" specification="_RkrS0apvEee0e-homK-IiA">
+        <ownedParameter xmi:id="_RnmrB6pvEee0e-homK-IiA" direction="return">
+          <name xsi:nil="true"/>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <language>java</language>
+        <body>return orangesProcessed[0] % ORANGES_PER_BOTTLE;
+	</body>
+      </ownedBehavior>
+      <ownedOperation xmi:id="_RkmaUKpvEee0e-homK-IiA" name="main" isStatic="true" method="_Rnlc4qpvEee0e-homK-IiA">
+        <ownedComment xmi:id="_qShQIKpwEee0e-homK-IiA">
+          <body>Main Thread
+	 * creates an array of plants
+	 * Initializes The Assembly Line used for all threads of plant and workers
+	 * Initializes plants and starts their run. 
+	 * Runs for PROCESSING_TIME seconds
+	 * after the time, it stops the workers and plants then outputs the results
+	 * Then exits the system to clean up.</body>
+        </ownedComment>
+        <ownedParameter xmi:id="_RkmaUapvEee0e-homK-IiA" name="args">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RkmaUqpvEee0e-homK-IiA" value="*"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_RknBYKpvEee0e-homK-IiA" name="delay" visibility="private" isStatic="true" method="_Rnlc5apvEee0e-homK-IiA">
+        <ownedComment xmi:id="_RnqVYqpvEee0e-homK-IiA">
+          <body>delay method 
+	 * @param time
+	 * @param errMsg</body>
+        </ownedComment>
+        <ownedParameter xmi:id="_RknBYapvEee0e-homK-IiA" name="time">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_RknBYqpvEee0e-homK-IiA" name="errMsg">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_RkoPgKpvEee0e-homK-IiA" name="Plant" visibility="package" method="_RnmD8KpvEee0e-homK-IiA">
+        <eAnnotations xmi:id="_RkoPgapvEee0e-homK-IiA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details xmi:id="_Rko2kKpvEee0e-homK-IiA" key="create"/>
+        </eAnnotations>
+        <ownedParameter xmi:id="_Rko2kapvEee0e-homK-IiA" type="_RklMMKpvEee0e-homK-IiA" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_Rko2kqpvEee0e-homK-IiA" name="startPlant" method="_RnmD8qpvEee0e-homK-IiA"/>
+      <ownedOperation xmi:id="_RkpdoKpvEee0e-homK-IiA" name="stopPlant" method="_RnmD86pvEee0e-homK-IiA"/>
+      <ownedOperation xmi:id="_RkpdoapvEee0e-homK-IiA" name="waitToStop" method="_RnmD9KpvEee0e-homK-IiA"/>
+      <ownedOperation xmi:id="_RkpdoqpvEee0e-homK-IiA" name="run" method="_RnmD9apvEee0e-homK-IiA"/>
+      <ownedOperation xmi:id="_RkqEsKpvEee0e-homK-IiA" name="getProvidedOranges" method="_RnmrAKpvEee0e-homK-IiA">
+        <ownedParameter xmi:id="_RkqEsapvEee0e-homK-IiA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_RkqrwKpvEee0e-homK-IiA" name="getProcessedOranges" method="_RnmrAqpvEee0e-homK-IiA">
+        <ownedParameter xmi:id="_RkqrwapvEee0e-homK-IiA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_RkqrwqpvEee0e-homK-IiA" name="getBottles" method="_RnmrBKpvEee0e-homK-IiA">
+        <ownedParameter xmi:id="_RkrS0KpvEee0e-homK-IiA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_RkrS0apvEee0e-homK-IiA" name="getWaste" method="_RnmrBqpvEee0e-homK-IiA">
+        <ownedParameter xmi:id="_RkrS0qpvEee0e-homK-IiA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_RkvkQKpvEee0e-homK-IiA" name="Worker">
+      <ownedAttribute xmi:id="_RnXacKpvEee0e-homK-IiA" name="in" type="_RkMKoKpvEee0e-homK-IiA" association="_RnwcAapvEee0e-homK-IiA"/>
+      <ownedAttribute xmi:id="_RnYBgapvEee0e-homK-IiA" name="out" type="_RkMKoKpvEee0e-homK-IiA" association="_RnxqIKpvEee0e-homK-IiA"/>
+      <ownedAttribute xmi:id="_RnYokapvEee0e-homK-IiA" name="role">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_RnZPoapvEee0e-homK-IiA" name="timeToWork">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_RnZ2sKpvEee0e-homK-IiA" value="false"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_RnZ2sqpvEee0e-homK-IiA" name="thread" isLeaf="true" type="_Rm9x0apvEee0e-homK-IiA" isReadOnly="true" association="_RnyRMapvEee0e-homK-IiA"/>
+      <interfaceRealization xmi:id="_RnG7wKpvEee0e-homK-IiA" client="_RkvkQKpvEee0e-homK-IiA" supplier="_RnBcMKpvEee0e-homK-IiA" contract="_RnBcMKpvEee0e-homK-IiA"/>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_RnnSEKpvEee0e-homK-IiA" name="Worker" specification="_Rm4SQKpvEee0e-homK-IiA">
+        <ownedParameter xmi:id="_RnnSEapvEee0e-homK-IiA" name="in" type="_RkMKoKpvEee0e-homK-IiA"/>
+        <ownedParameter xmi:id="_RnnSEqpvEee0e-homK-IiA" name="out" type="_RkMKoKpvEee0e-homK-IiA"/>
+        <ownedParameter xmi:id="_RnnSE6pvEee0e-homK-IiA" name="role">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_RnnSFKpvEee0e-homK-IiA" type="_RkvkQKpvEee0e-homK-IiA" direction="return"/>
+        <language>java</language>
+        <body>this();&#xD;
+		this.role = role;&#xD;
+		this.in = in;&#xD;
+		this.out = out;&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_RnnSFapvEee0e-homK-IiA" name="Worker" specification="_RkyAgKpvEee0e-homK-IiA">
+        <ownedParameter xmi:id="_RnnSFqpvEee0e-homK-IiA" type="_RkvkQKpvEee0e-homK-IiA" direction="return"/>
+        <language>java</language>
+        <body>thread = new Thread(this, &quot;slave&quot;);&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Rnn5IKpvEee0e-homK-IiA" name="startWorker" specification="_RkynkKpvEee0e-homK-IiA">
+        <language>java</language>
+        <body>timeToWork = true;&#xD;
+		//System.out.println(&quot;This has started( should be 10 )&quot;);&#xD;
+		//thread.start();&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Rnn5IapvEee0e-homK-IiA" name="stopWorker" specification="_RkynkapvEee0e-homK-IiA">
+        <language>java</language>
+        <body>//System.out.println(&quot;This has stopped( should be 10 )&quot;);&#xD;
+		timeToWork = false;&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Rnn5IqpvEee0e-homK-IiA" name="waitToStop" specification="_RkzOoKpvEee0e-homK-IiA">
+        <language>java</language>
+        <body>try {&#xD;
+			thread.join();&#xD;
+			//System.out.println(&quot;This has died( should be 10 )&quot;);&#xD;
+		} catch (InterruptedException e) {&#xD;
+			System.err.println(thread.getName() + &quot; stop malfunction&quot;);&#xD;
+		}&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Rnn5I6pvEee0e-homK-IiA" name="run" specification="_Rkz1sKpvEee0e-homK-IiA">
+        <language>java</language>
+        <body>//System.out.println(&quot;The &quot; + Thread.currentThread().getName() + &quot; is Processing oranges&quot;);&#xD;
+		while (timeToWork) {&#xD;
+			if (role == 0) {&#xD;
+				fetchOrange();&#xD;
+			} else if (role == 1) {&#xD;
+				peelOrange();&#xD;
+			} else if (role == 2) {&#xD;
+				squeezeOrange();&#xD;
+			} else if (role == 3) {&#xD;
+				bottleOrange();&#xD;
+			} else if (role == 4) {&#xD;
+				processOrange();&#xD;
+			}&#xD;
+		}&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_RnogMKpvEee0e-homK-IiA" name="fetchOrange" specification="_Rkz1sapvEee0e-homK-IiA">
+        <language>java</language>
+        <body>Orange o = new Orange();&#xD;
+		Plant.orangesProvided[0]++;&#xD;
+		out.addOrange(o);&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_RnogMapvEee0e-homK-IiA" name="peelOrange" specification="_Rkz1sqpvEee0e-homK-IiA">
+        <language>java</language>
+        <body>Orange o = in.getOrange();&#xD;
+		if (o.getState() == Orange.State.Fetched) {&#xD;
+			o.runProcess();&#xD;
+			out.addOrange(o);&#xD;
+		}&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_RnogMqpvEee0e-homK-IiA" name="squeezeOrange" specification="_Rk0cwKpvEee0e-homK-IiA">
+        <language>java</language>
+        <body>Orange o = in.getOrange();&#xD;
+		if (o.getState() == Orange.State.Peeled) {&#xD;
+			o.runProcess();&#xD;
+			out.addOrange(o);&#xD;
+		}&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_RnogM6pvEee0e-homK-IiA" name="bottleOrange" specification="_Rk0cwapvEee0e-homK-IiA">
+        <language>java</language>
+        <body>Orange o = in.getOrange();&#xD;
+		if (o.getState() == Orange.State.Squeezed) {&#xD;
+			o.runProcess();&#xD;
+			out.addOrange(o);&#xD;
+		}&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_RnogNKpvEee0e-homK-IiA" name="processOrange" specification="_Rk1D0KpvEee0e-homK-IiA">
+        <language>java</language>
+        <body>Orange o = in.getOrange();&#xD;
+		if (o.getState() == Orange.State.Bottled) {&#xD;
+			o.runProcess();&#xD;
+			Plant.orangesProcessed[0]++;&#xD;
+&#xD;
+		}&#xD;
+	</body>
+      </ownedBehavior>
+      <ownedOperation xmi:id="_RkyAgKpvEee0e-homK-IiA" name="Worker" visibility="package" method="_RnnSFapvEee0e-homK-IiA">
+        <eAnnotations xmi:id="_RkyAgapvEee0e-homK-IiA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details xmi:id="_RkyAgqpvEee0e-homK-IiA" key="create"/>
+        </eAnnotations>
+        <ownedParameter xmi:id="_RkyAg6pvEee0e-homK-IiA" type="_RkvkQKpvEee0e-homK-IiA" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_RkynkKpvEee0e-homK-IiA" name="startWorker" method="_Rnn5IKpvEee0e-homK-IiA"/>
+      <ownedOperation xmi:id="_RkynkapvEee0e-homK-IiA" name="stopWorker" method="_Rnn5IapvEee0e-homK-IiA"/>
+      <ownedOperation xmi:id="_RkzOoKpvEee0e-homK-IiA" name="waitToStop" method="_Rnn5IqpvEee0e-homK-IiA"/>
+      <ownedOperation xmi:id="_Rkz1sKpvEee0e-homK-IiA" name="run" method="_Rnn5I6pvEee0e-homK-IiA"/>
+      <ownedOperation xmi:id="_Rkz1sapvEee0e-homK-IiA" name="fetchOrange" method="_RnogMKpvEee0e-homK-IiA"/>
+      <ownedOperation xmi:id="_Rkz1sqpvEee0e-homK-IiA" name="peelOrange" method="_RnogMapvEee0e-homK-IiA"/>
+      <ownedOperation xmi:id="_Rk0cwKpvEee0e-homK-IiA" name="squeezeOrange" method="_RnogMqpvEee0e-homK-IiA"/>
+      <ownedOperation xmi:id="_Rk0cwapvEee0e-homK-IiA" name="bottleOrange" method="_RnogM6pvEee0e-homK-IiA"/>
+      <ownedOperation xmi:id="_Rk1D0KpvEee0e-homK-IiA" name="processOrange" method="_RnogNKpvEee0e-homK-IiA"/>
+      <ownedOperation xmi:id="_Rm4SQKpvEee0e-homK-IiA" name="Worker" method="_RnnSEKpvEee0e-homK-IiA">
+        <eAnnotations xmi:id="_Rm45U6pvEee0e-homK-IiA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details xmi:id="_Rm45VKpvEee0e-homK-IiA" key="create"/>
+        </eAnnotations>
+        <ownedParameter xmi:id="_Rm45UKpvEee0e-homK-IiA" name="in" type="_RkMKoKpvEee0e-homK-IiA"/>
+        <ownedParameter xmi:id="_Rm45UapvEee0e-homK-IiA" name="out" type="_RkMKoKpvEee0e-homK-IiA"/>
+        <ownedParameter xmi:id="_Rm45UqpvEee0e-homK-IiA" name="role">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_Rm45VapvEee0e-homK-IiA" type="_RkvkQKpvEee0e-homK-IiA" direction="return"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_RntYsKpvEee0e-homK-IiA" name="" memberEnd="_RntYsapvEee0e-homK-IiA _RnLNMKpvEee0e-homK-IiA">
+      <ownedEnd xmi:id="_RntYsapvEee0e-homK-IiA" name="" type="_RkMKoKpvEee0e-homK-IiA" association="_RntYsKpvEee0e-homK-IiA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Rnt_wapvEee0e-homK-IiA" name="" memberEnd="_Rnt_wqpvEee0e-homK-IiA _RnRT0KpvEee0e-homK-IiA">
+      <ownedEnd xmi:id="_Rnt_wqpvEee0e-homK-IiA" name="" type="_RklMMKpvEee0e-homK-IiA" association="_Rnt_wapvEee0e-homK-IiA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Rnum0apvEee0e-homK-IiA" name="" memberEnd="_Rnum0qpvEee0e-homK-IiA _RnTwEKpvEee0e-homK-IiA">
+      <ownedEnd xmi:id="_Rnum0qpvEee0e-homK-IiA" name="" type="_RklMMKpvEee0e-homK-IiA" association="_Rnum0apvEee0e-homK-IiA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Rnv08KpvEee0e-homK-IiA" name="" memberEnd="_Rnv08apvEee0e-homK-IiA _RnU-MapvEee0e-homK-IiA">
+      <ownedEnd xmi:id="_Rnv08apvEee0e-homK-IiA" name="" type="_RklMMKpvEee0e-homK-IiA" association="_Rnv08KpvEee0e-homK-IiA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_RnwcAapvEee0e-homK-IiA" name="" memberEnd="_RnwcAqpvEee0e-homK-IiA _RnXacKpvEee0e-homK-IiA">
+      <ownedEnd xmi:id="_RnwcAqpvEee0e-homK-IiA" name="" type="_RkvkQKpvEee0e-homK-IiA" association="_RnwcAapvEee0e-homK-IiA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_RnxqIKpvEee0e-homK-IiA" name="" memberEnd="_RnxqIapvEee0e-homK-IiA _RnYBgapvEee0e-homK-IiA">
+      <ownedEnd xmi:id="_RnxqIapvEee0e-homK-IiA" name="" type="_RkvkQKpvEee0e-homK-IiA" association="_RnxqIKpvEee0e-homK-IiA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_RnyRMapvEee0e-homK-IiA" name="" memberEnd="_RnyRMqpvEee0e-homK-IiA _RnZ2sqpvEee0e-homK-IiA">
+      <ownedEnd xmi:id="_RnyRMqpvEee0e-homK-IiA" name="" type="_RkvkQKpvEee0e-homK-IiA" association="_RnyRMapvEee0e-homK-IiA"/>
+    </packagedElement>
+    <profileApplication xmi:id="_RXub8KpvEee0e-homK-IiA">
+      <eAnnotations xmi:id="_RXyGUKpvEee0e-homK-IiA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile"/>
+    </profileApplication>
+  </uml:Model>
+  <UMLLabProfile:TargetLanguage xmi:id="_RX3l4KpvEee0e-homK-IiA" base_Package="_RNuLYKpvEee0e-homK-IiA">
+    <languageName>java</languageName>
+  </UMLLabProfile:TargetLanguage>
+  <UMLLabProfile:Reference xmi:id="_RmssEKpvEee0e-homK-IiA" base_Element="_Rmrd8KpvEee0e-homK-IiA"/>
+  <UMLLabProfile:Reference xmi:id="_RmvvYKpvEee0e-homK-IiA" base_Element="_Rmt6MKpvEee0e-homK-IiA"/>
+  <UMLLabProfile:Reference xmi:id="_Rm-_8KpvEee0e-homK-IiA" base_Element="_Rm9x0apvEee0e-homK-IiA"/>
+  <UMLLabProfile:Reference xmi:id="_RnCDQKpvEee0e-homK-IiA" base_Element="_RnBcMKpvEee0e-homK-IiA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_RnMbUKpvEee0e-homK-IiA" base_Element="_RnLNMKpvEee0e-homK-IiA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_RnPeoKpvEee0e-homK-IiA" base_Element="_RnO3kKpvEee0e-homK-IiA"/>
+  <UMLLabProfile:Array xmi:id="_RnRT0qpvEee0e-homK-IiA" base_Element="_RnRT0KpvEee0e-homK-IiA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_RnR64apvEee0e-homK-IiA" base_Element="_RnRT0KpvEee0e-homK-IiA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_RnTJAqpvEee0e-homK-IiA" base_Element="_RnTJAKpvEee0e-homK-IiA"/>
+  <UMLLabProfile:Array xmi:id="_RnTwEqpvEee0e-homK-IiA" dimensions="0" base_Element="_RnTwEKpvEee0e-homK-IiA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_RnU-MKpvEee0e-homK-IiA" base_Element="_RnTwEKpvEee0e-homK-IiA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_RnVlQKpvEee0e-homK-IiA" base_Element="_RnU-MapvEee0e-homK-IiA"/>
+  <UMLLabProfile:Array xmi:id="_RnVlQ6pvEee0e-homK-IiA" base_Element="_RnVlQapvEee0e-homK-IiA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_RnWMUapvEee0e-homK-IiA" base_Element="_RnVlQapvEee0e-homK-IiA"/>
+  <UMLLabProfile:Array xmi:id="_RnWzYKpvEee0e-homK-IiA" dimensions="1" base_Element="_RnWMUqpvEee0e-homK-IiA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_RnWzYqpvEee0e-homK-IiA" base_Element="_RnWMUqpvEee0e-homK-IiA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_RnYBgKpvEee0e-homK-IiA" base_Element="_RnXacKpvEee0e-homK-IiA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_RnYokKpvEee0e-homK-IiA" base_Element="_RnYBgapvEee0e-homK-IiA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_RnZPoKpvEee0e-homK-IiA" base_Element="_RnYokapvEee0e-homK-IiA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_RnZ2sapvEee0e-homK-IiA" base_Element="_RnZPoapvEee0e-homK-IiA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_RnadwKpvEee0e-homK-IiA" base_Element="_RnZ2sqpvEee0e-homK-IiA"/>
+  <uml:OpaqueBehavior xmi:id="_RnkOwqpvEee0e-homK-IiA" name="State" specification="_Rkd3cKpvEee0e-homK-IiA">
+    <ownedParameter xmi:id="_Rnk10KpvEee0e-homK-IiA" name="timeToComplete">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </ownedParameter>
+    <ownedParameter xmi:id="_Rnk10apvEee0e-homK-IiA" type="_RkbbMKpvEee0e-homK-IiA" direction="return"/>
+    <language>java</language>
+    <body>this.timeToComplete = timeToComplete;&#xD;
+		</body>
+  </uml:OpaqueBehavior>
+  <uml:OpaqueBehavior xmi:id="_Rnk10qpvEee0e-homK-IiA" name="getNext" specification="_RkfFkKpvEee0e-homK-IiA">
+    <ownedParameter xmi:id="_Rnk106pvEee0e-homK-IiA" type="_RkbbMKpvEee0e-homK-IiA" direction="return"/>
+    <language>java</language>
+    <body>int currIndex = this.ordinal();&#xD;
+			if (currIndex >= finalIndex) {&#xD;
+				throw new IllegalStateException(&quot;Already at final state&quot;);&#xD;
+			}&#xD;
+			return State.values()[currIndex + 1];&#xD;
+		</body>
+  </uml:OpaqueBehavior>
+  <UMLLabProfile:Reference xmi:id="_Rnt_wKpvEee0e-homK-IiA" base_Element="_RntYsKpvEee0e-homK-IiA"/>
+  <UMLLabProfile:Reference xmi:id="_Rnum0KpvEee0e-homK-IiA" base_Element="_Rnt_wapvEee0e-homK-IiA"/>
+  <UMLLabProfile:Reference xmi:id="_RnvN4KpvEee0e-homK-IiA" base_Element="_Rnum0apvEee0e-homK-IiA"/>
+  <UMLLabProfile:Reference xmi:id="_RnwcAKpvEee0e-homK-IiA" base_Element="_Rnv08KpvEee0e-homK-IiA"/>
+  <UMLLabProfile:Reference xmi:id="_RnxDEKpvEee0e-homK-IiA" base_Element="_RnwcAapvEee0e-homK-IiA"/>
+  <UMLLabProfile:Reference xmi:id="_RnyRMKpvEee0e-homK-IiA" base_Element="_RnxqIKpvEee0e-homK-IiA"/>
+  <UMLLabProfile:Reference xmi:id="_RnzfUKpvEee0e-homK-IiA" base_Element="_RnyRMapvEee0e-homK-IiA"/>
+  <UMLLabProfile:Array xmi:id="_qSYtQKpwEee0e-homK-IiA" base_Element="_RkmaUapvEee0e-homK-IiA"/>
+</xmi:XMI>

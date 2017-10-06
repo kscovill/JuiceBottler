@@ -1,0 +1,656 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.yattasolutions.uml.diagrams.classifier:ClassDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.yattasolutions.diagrams="http://ns.yatta-solutions.com/umllab/diagrams/1.1.0" xmlns:com.yattasolutions.uml.diagrams.classifier="http://ns.yatta-solutions.com/umllab/diagrams/classifier/1.1.0" xmi:id="_RPDoIKpvEee0e-homK-IiA">
+  <modelElement href="JuiceBottler.uml#_RNuLYKpvEee0e-homK-IiA"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_TnJg4KpvEee0e-homK-IiA" sourceAnchor="228.0,56.0" targetAnchor="0.0,59.0" target="_ToEG4KpvEee0e-homK-IiA" source="_TnKvAKpvEee0e-homK-IiA">
+    <modelElement href="JuiceBottler.uml#_RntYsKpvEee0e-homK-IiA"/>
+    <stereotypes xmi:id="_TnJg4apvEee0e-homK-IiA" name="Reference">
+      <modelElement href="JuiceBottler.uml#_Rnt_wKpvEee0e-homK-IiA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_TnKH8KpvEee0e-homK-IiA" text="">
+      <visualProperties xmi:id="_T45YMKpvEee0e-homK-IiA" position="-48.5,-8.5"/>
+    </nameVisual>
+    <sourceRole xmi:id="_TnKH8apvEee0e-homK-IiA" aggregationKind="NONE" name="">
+      <modelElement href="JuiceBottler.uml#_RntYsapvEee0e-homK-IiA"/>
+      <visualProperties xmi:id="_T44xIKpvEee0e-homK-IiA" position="5.0,-48.5"/>
+      <visibility xmi:id="_TnKH8qpvEee0e-homK-IiA" label="+"/>
+      <cardinality xmi:id="_TnKH86pvEee0e-homK-IiA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_TnKH9KpvEee0e-homK-IiA" aggregationKind="NONE" name="oranges" navigable="true">
+      <modelElement href="JuiceBottler.uml#_RnLNMKpvEee0e-homK-IiA"/>
+      <visualProperties xmi:id="_T45_QKpvEee0e-homK-IiA" position="-62.0,3.5"/>
+      <stereotypes xmi:id="_HOoKkKqnEeeAkbNgY_9L2Q" name="LegacyStyledElement">
+        <modelElement href="JuiceBottler.uml#_RnMbUKpvEee0e-homK-IiA"/>
+      </stereotypes>
+      <visibility xmi:id="_TnKH9apvEee0e-homK-IiA" label="-"/>
+      <cardinality xmi:id="_TnKH9qpvEee0e-homK-IiA" label="1..*" max="-1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_TooHkKpvEee0e-homK-IiA" sourceAnchor="286.0,183.0" targetAnchor="114.0,111.0" target="_TnKvAKpvEee0e-homK-IiA" source="_TpJE-apvEee0e-homK-IiA">
+    <modelElement href="JuiceBottler.uml#_Rnt_wapvEee0e-homK-IiA"/>
+    <bendpoints xmi:id="_T4278KpvEee0e-homK-IiA" sourceX="364" targetY="478"/>
+    <stereotypes xmi:id="_To5NU6pvEee0e-homK-IiA" name="Reference">
+      <modelElement href="JuiceBottler.uml#_Rnum0KpvEee0e-homK-IiA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_To5NUKpvEee0e-homK-IiA" text="">
+      <visualProperties xmi:id="_T47NYKpvEee0e-homK-IiA" position="-18.5,-34.5"/>
+    </nameVisual>
+    <sourceRole xmi:id="_To5NUapvEee0e-homK-IiA" aggregationKind="NONE" name="">
+      <modelElement href="JuiceBottler.uml#_Rnt_wqpvEee0e-homK-IiA"/>
+      <visualProperties xmi:id="_T46mUKpvEee0e-homK-IiA" position="5.0,-48.5"/>
+      <visibility xmi:id="_TpGBoKpvEee0e-homK-IiA" label="+"/>
+      <cardinality xmi:id="_TpFakKpvEee0e-homK-IiA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_To5NUqpvEee0e-homK-IiA" aggregationKind="NONE" name="lines" navigable="true">
+      <modelElement href="JuiceBottler.uml#_RnRT0KpvEee0e-homK-IiA"/>
+      <visualProperties xmi:id="_T470cKpvEee0e-homK-IiA" position="6.5,5.500000000000057"/>
+      <stereotypes xmi:id="_HOpYsKqnEeeAkbNgY_9L2Q" name="Array">
+        <modelElement href="JuiceBottler.uml#_RnRT0qpvEee0e-homK-IiA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_HOp_wKqnEeeAkbNgY_9L2Q" name="LegacyStyledElement">
+        <modelElement href="JuiceBottler.uml#_RnR64apvEee0e-homK-IiA"/>
+      </stereotypes>
+      <visibility xmi:id="_TpGBoqpvEee0e-homK-IiA" label="+"/>
+      <cardinality xmi:id="_TpGBoapvEee0e-homK-IiA" label="1..*" max="-1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_TpH20KpvEee0e-homK-IiA" sourceAnchor="143.0,0.0" targetAnchor="207.0,308.0" target="_TqPRIKpvEee0e-homK-IiA" source="_TpJE-apvEee0e-homK-IiA">
+    <modelElement href="JuiceBottler.uml#_Rnum0apvEee0e-homK-IiA"/>
+    <stereotypes xmi:id="_TpH20apvEee0e-homK-IiA" name="Reference">
+      <modelElement href="JuiceBottler.uml#_RnvN4KpvEee0e-homK-IiA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_TpH20qpvEee0e-homK-IiA" text="">
+      <visualProperties xmi:id="_T49poKpvEee0e-homK-IiA" position="-18.5,-13.5"/>
+    </nameVisual>
+    <sourceRole xmi:id="_TpH206pvEee0e-homK-IiA" aggregationKind="NONE" name="">
+      <modelElement href="JuiceBottler.uml#_Rnum0qpvEee0e-homK-IiA"/>
+      <visualProperties xmi:id="_T48bgKpvEee0e-homK-IiA" position="-20.5,-49.5"/>
+      <visibility xmi:id="_TpH21KpvEee0e-homK-IiA" label="+"/>
+      <cardinality xmi:id="_TpH21apvEee0e-homK-IiA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_TpH21qpvEee0e-homK-IiA" aggregationKind="NONE" name="worker" navigable="true">
+      <modelElement href="JuiceBottler.uml#_RnTwEKpvEee0e-homK-IiA"/>
+      <visualProperties xmi:id="_T49poapvEee0e-homK-IiA" position="0.4999999999999716,5.0"/>
+      <stereotypes xmi:id="_HOscAKqnEeeAkbNgY_9L2Q" name="Array">
+        <modelElement href="JuiceBottler.uml#_RnTwEqpvEee0e-homK-IiA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_HOtDEKqnEeeAkbNgY_9L2Q" name="LegacyStyledElement">
+        <modelElement href="JuiceBottler.uml#_RnU-MKpvEee0e-homK-IiA"/>
+      </stereotypes>
+      <visibility xmi:id="_TpH216pvEee0e-homK-IiA" label="+"/>
+      <cardinality xmi:id="_TpH22KpvEee0e-homK-IiA" label="1..*" max="-1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_TpJE8KpvEee0e-homK-IiA" source="_TpJE-apvEee0e-homK-IiA">
+    <modelElement href="JuiceBottler.uml#_Rnv08KpvEee0e-homK-IiA"/>
+    <stereotypes xmi:id="_TpJE8apvEee0e-homK-IiA" name="Reference">
+      <modelElement href="JuiceBottler.uml#_RnwcAKpvEee0e-homK-IiA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_TpJE8qpvEee0e-homK-IiA" text=""/>
+    <sourceRole xmi:id="_TpJE86pvEee0e-homK-IiA" aggregationKind="NONE" name="">
+      <modelElement href="JuiceBottler.uml#_Rnv08apvEee0e-homK-IiA"/>
+      <visibility xmi:id="_TpJE9KpvEee0e-homK-IiA" label="+"/>
+      <cardinality xmi:id="_TpJE9apvEee0e-homK-IiA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_TpJE9qpvEee0e-homK-IiA" aggregationKind="NONE" name="thread" navigable="true">
+      <modelElement href="JuiceBottler.uml#_RnU-MapvEee0e-homK-IiA"/>
+      <stereotypes xmi:id="_HOuRMKqnEeeAkbNgY_9L2Q" name="LegacyStyledElement">
+        <modelElement href="JuiceBottler.uml#_RnVlQKpvEee0e-homK-IiA"/>
+      </stereotypes>
+      <visibility xmi:id="_TpJE96pvEee0e-homK-IiA" label="-"/>
+      <cardinality xmi:id="_TpJE-KpvEee0e-homK-IiA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_TpoNIKpvEee0e-homK-IiA" sourceAnchor="207.0,0.0" targetAnchor="114.0,0.0" target="_TnKvAKpvEee0e-homK-IiA" source="_TqPRIKpvEee0e-homK-IiA">
+    <modelElement href="JuiceBottler.uml#_RnwcAapvEee0e-homK-IiA"/>
+    <bendpoints xmi:id="_T44KEKpvEee0e-homK-IiA" sourceY="-80" targetX="-507" targetY="-178"/>
+    <bendpoints xmi:id="_T44KEapvEee0e-homK-IiA" sourceX="507" sourceY="-80" targetY="-178"/>
+    <stereotypes xmi:id="_TqE5EKpvEee0e-homK-IiA" name="Reference">
+      <modelElement href="JuiceBottler.uml#_RnxDEKpvEee0e-homK-IiA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_TqESAKpvEee0e-homK-IiA" text="">
+      <visualProperties xmi:id="_T5AF4KpvEee0e-homK-IiA" position="170.5,-8.500000000000014"/>
+    </nameVisual>
+    <sourceRole xmi:id="_TqESAapvEee0e-homK-IiA" aggregationKind="NONE" name="">
+      <modelElement href="JuiceBottler.uml#_RnwcAqpvEee0e-homK-IiA"/>
+      <visualProperties xmi:id="_T4-3wKpvEee0e-homK-IiA" position="-20.5,-50.0"/>
+      <visibility xmi:id="_TqMN0apvEee0e-homK-IiA" label="+"/>
+      <cardinality xmi:id="_TqMN0KpvEee0e-homK-IiA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_TqESAqpvEee0e-homK-IiA" aggregationKind="NONE" name="in" navigable="true">
+      <modelElement href="JuiceBottler.uml#_RnXacKpvEee0e-homK-IiA"/>
+      <visualProperties xmi:id="_T5AF4apvEee0e-homK-IiA" position="-25.5,-49.5"/>
+      <stereotypes xmi:id="_HOvfUKqnEeeAkbNgY_9L2Q" name="LegacyStyledElement">
+        <modelElement href="JuiceBottler.uml#_RnYBgKpvEee0e-homK-IiA"/>
+      </stereotypes>
+      <visibility xmi:id="_TqMN06pvEee0e-homK-IiA" label="+"/>
+      <cardinality xmi:id="_TqMN0qpvEee0e-homK-IiA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_Tp8WMKpvEee0e-homK-IiA" sourceAnchor="414.0,154.0" targetAnchor="0.0,56.0" target="_TnKvAKpvEee0e-homK-IiA" source="_TqPRIKpvEee0e-homK-IiA">
+    <modelElement href="JuiceBottler.uml#_RnxqIKpvEee0e-homK-IiA"/>
+    <stereotypes xmi:id="_TqE5FKpvEee0e-homK-IiA" name="Reference">
+      <modelElement href="JuiceBottler.uml#_RnyRMKpvEee0e-homK-IiA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_TqE5EapvEee0e-homK-IiA" text="">
+      <visualProperties xmi:id="_T5BUAapvEee0e-homK-IiA" position="-32.5,-8.5"/>
+    </nameVisual>
+    <sourceRole xmi:id="_TqE5EqpvEee0e-homK-IiA" aggregationKind="NONE" name="">
+      <modelElement href="JuiceBottler.uml#_RnxqIapvEee0e-homK-IiA"/>
+      <visualProperties xmi:id="_T5BUAKpvEee0e-homK-IiA" position="5.0,-48.5"/>
+      <visibility xmi:id="_TqM04apvEee0e-homK-IiA" label="+"/>
+      <cardinality xmi:id="_TqM04KpvEee0e-homK-IiA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_TqE5E6pvEee0e-homK-IiA" aggregationKind="NONE" name="out" navigable="true">
+      <modelElement href="JuiceBottler.uml#_RnYBgapvEee0e-homK-IiA"/>
+      <visualProperties xmi:id="_T5B7EKpvEee0e-homK-IiA" position="-38.0,3.5"/>
+      <stereotypes xmi:id="_HOwtcKqnEeeAkbNgY_9L2Q" name="LegacyStyledElement">
+        <modelElement href="JuiceBottler.uml#_RnYokKpvEee0e-homK-IiA"/>
+      </stereotypes>
+      <visibility xmi:id="_TqM046pvEee0e-homK-IiA" label="+"/>
+      <cardinality xmi:id="_TqM04qpvEee0e-homK-IiA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_TqE5FapvEee0e-homK-IiA" source="_TqPRIKpvEee0e-homK-IiA">
+    <modelElement href="JuiceBottler.uml#_RnyRMapvEee0e-homK-IiA"/>
+    <stereotypes xmi:id="_TqM06KpvEee0e-homK-IiA" name="Reference">
+      <modelElement href="JuiceBottler.uml#_RnzfUKpvEee0e-homK-IiA"/>
+    </stereotypes>
+    <nameVisual xmi:id="_TqM05apvEee0e-homK-IiA" text=""/>
+    <sourceRole xmi:id="_TqM05qpvEee0e-homK-IiA" aggregationKind="NONE" name="">
+      <modelElement href="JuiceBottler.uml#_RnyRMqpvEee0e-homK-IiA"/>
+      <visibility xmi:id="_TqODAapvEee0e-homK-IiA" label="+"/>
+      <cardinality xmi:id="_TqODAKpvEee0e-homK-IiA" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_TqM056pvEee0e-homK-IiA" aggregationKind="NONE" name="thread" navigable="true">
+      <modelElement href="JuiceBottler.uml#_RnZ2sqpvEee0e-homK-IiA"/>
+      <stereotypes xmi:id="_HOxUgKqnEeeAkbNgY_9L2Q" name="LegacyStyledElement">
+        <modelElement href="JuiceBottler.uml#_RnadwKpvEee0e-homK-IiA"/>
+      </stereotypes>
+      <visibility xmi:id="_TqOqEKpvEee0e-homK-IiA" label="+"/>
+      <cardinality xmi:id="_TqODAqpvEee0e-homK-IiA" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_qSkTcKpwEee0e-homK-IiA" targetItem="_TpJFJqpvEee0e-homK-IiA" sourceItem="_qSjsYKpwEee0e-homK-IiA"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_qTuKAKpwEee0e-homK-IiA" targetItem="_TpJFLKpvEee0e-homK-IiA" sourceItem="_qTjx8KpwEee0e-homK-IiA"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_HO4pQKqnEeeAkbNgY_9L2Q" subClass="_TnKvAKpvEee0e-homK-IiA">
+    <modelElement href="JuiceBottler.uml#_Rm-_8apvEee0e-homK-IiA"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_byxcsKqqEeeAkbNgY_9L2Q" targetItem="_TnKvCKpvEee0e-homK-IiA" sourceItem="_bytLQKqqEeeAkbNgY_9L2Q"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_bzl8EKqqEeeAkbNgY_9L2Q" targetItem="_TnKvGqpvEee0e-homK-IiA" sourceItem="_by8b0KqqEeeAkbNgY_9L2Q"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_b0TtwKqqEeeAkbNgY_9L2Q" targetItem="_TnKvDqpvEee0e-homK-IiA" sourceItem="_bzrboKqqEeeAkbNgY_9L2Q"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_b0fT8KqqEeeAkbNgY_9L2Q" targetItem="_TnKvFKpvEee0e-homK-IiA" sourceItem="_b0bCgKqqEeeAkbNgY_9L2Q"/>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_TnKvAKpvEee0e-homK-IiA" name="AssemblyLine" associationsIn="_TooHkKpvEee0e-homK-IiA _TpoNIKpvEee0e-homK-IiA _Tp8WMKpvEee0e-homK-IiA" associationsOut="_TnJg4KpvEee0e-homK-IiA" generalizations="_HO4pQKqnEeeAkbNgY_9L2Q">
+    <modelElement href="JuiceBottler.uml#_RkMKoKpvEee0e-homK-IiA"/>
+    <visualProperties xmi:id="_TnKvAapvEee0e-homK-IiA" position="610.0,208.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_TnKvAqpvEee0e-homK-IiA" label="+"/>
+    <attributes xmi:id="_TnKvA6pvEee0e-homK-IiA" name="oranges">
+      <modelElement href="JuiceBottler.uml#_RnLNMKpvEee0e-homK-IiA"/>
+      <stereotypes xmi:id="_HPYYgKqnEeeAkbNgY_9L2Q" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_HPcp8KqnEeeAkbNgY_9L2Q" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_HPxaEKqnEeeAkbNgY_9L2Q" name="LegacyStyledElement"/>
+      <visibility xmi:id="_TnKvBapvEee0e-homK-IiA" label="-"/>
+      <cardinality xmi:id="_TnKvBqpvEee0e-homK-IiA" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_TnKvB6pvEee0e-homK-IiA" name="Orange">
+        <modelElement href="JuiceBottler.uml#_RkaNEKpvEee0e-homK-IiA"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_TnKvCKpvEee0e-homK-IiA" comments="_bytLQKqqEeeAkbNgY_9L2Q" targetConnectionVisual="_byxcsKqqEeeAkbNgY_9L2Q" name="AssemblyLine">
+      <modelElement href="JuiceBottler.uml#_RkTfYKpvEee0e-homK-IiA"/>
+      <keywords xmi:id="_TnKvCapvEee0e-homK-IiA" keyword="create"/>
+      <visibility xmi:id="_TnKvCqpvEee0e-homK-IiA" label="+"/>
+      <cardinality xmi:id="_TnKvC6pvEee0e-homK-IiA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_TnKvDKpvEee0e-homK-IiA">
+        <modelElement href="JuiceBottler.uml#_RkVUkKpvEee0e-homK-IiA"/>
+        <type xmi:id="_TnKvDapvEee0e-homK-IiA" name="AssemblyLine">
+          <modelElement href="JuiceBottler.uml#_RkMKoKpvEee0e-homK-IiA"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_TnKvDqpvEee0e-homK-IiA" comments="_bzrboKqqEeeAkbNgY_9L2Q" targetConnectionVisual="_b0TtwKqqEeeAkbNgY_9L2Q" name="getOrange">
+      <modelElement href="JuiceBottler.uml#_RkV7oKpvEee0e-homK-IiA"/>
+      <keywords xmi:id="_TnKvD6pvEee0e-homK-IiA" keyword="synchronized"/>
+      <visibility xmi:id="_TnKvEKpvEee0e-homK-IiA" label="+"/>
+      <cardinality xmi:id="_TnKvEapvEee0e-homK-IiA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_TnKvEqpvEee0e-homK-IiA">
+        <modelElement href="JuiceBottler.uml#_Rmw9gKpvEee0e-homK-IiA"/>
+        <type xmi:id="_TnKvE6pvEee0e-homK-IiA" name="Orange">
+          <modelElement href="JuiceBottler.uml#_RkaNEKpvEee0e-homK-IiA"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_TnKvFKpvEee0e-homK-IiA" comments="_b0bCgKqqEeeAkbNgY_9L2Q" targetConnectionVisual="_b0fT8KqqEeeAkbNgY_9L2Q" name="countOranges">
+      <modelElement href="JuiceBottler.uml#_RkWisKpvEee0e-homK-IiA"/>
+      <keywords xmi:id="_TnKvFapvEee0e-homK-IiA" keyword="synchronized"/>
+      <visibility xmi:id="_TnKvFqpvEee0e-homK-IiA" label="+"/>
+      <cardinality xmi:id="_TnKvF6pvEee0e-homK-IiA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_TnKvGKpvEee0e-homK-IiA">
+        <modelElement href="JuiceBottler.uml#_RkXJwqpvEee0e-homK-IiA"/>
+        <type xmi:id="_TnKvGapvEee0e-homK-IiA" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_TnKvGqpvEee0e-homK-IiA" comments="_by8b0KqqEeeAkbNgY_9L2Q" targetConnectionVisual="_bzl8EKqqEeeAkbNgY_9L2Q" name="addOrange">
+      <modelElement href="JuiceBottler.uml#_RmwWcKpvEee0e-homK-IiA"/>
+      <keywords xmi:id="_TnKvG6pvEee0e-homK-IiA" keyword="synchronized"/>
+      <visibility xmi:id="_TnKvHKpvEee0e-homK-IiA" label="+"/>
+      <cardinality xmi:id="_TnKvHapvEee0e-homK-IiA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_TnKvHqpvEee0e-homK-IiA" name="o">
+        <modelElement href="JuiceBottler.uml#_RmwWcapvEee0e-homK-IiA"/>
+        <cardinality xmi:id="_TnKvH6pvEee0e-homK-IiA" label="1" max="1" min="1"/>
+        <type xmi:id="_TnKvIKpvEee0e-homK-IiA" name="Orange">
+          <modelElement href="JuiceBottler.uml#_RkaNEKpvEee0e-homK-IiA"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_ToEG4KpvEee0e-homK-IiA" name="Orange" associationsIn="_TnJg4KpvEee0e-homK-IiA">
+    <modelElement href="JuiceBottler.uml#_RkaNEKpvEee0e-homK-IiA"/>
+    <visualProperties xmi:id="_ToEG4apvEee0e-homK-IiA" position="1060.0,205.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_ToEG4qpvEee0e-homK-IiA" label="+"/>
+    <attributes xmi:id="_ToEG46pvEee0e-homK-IiA" name="state">
+      <modelElement href="JuiceBottler.uml#_RnQFsKpvEee0e-homK-IiA"/>
+      <visibility xmi:id="_ToEG5KpvEee0e-homK-IiA" label="+"/>
+      <cardinality xmi:id="_ToEG5apvEee0e-homK-IiA" label="1" max="1" min="1"/>
+      <type xmi:id="_ToEG5qpvEee0e-homK-IiA" name="State">
+        <modelElement href="JuiceBottler.uml#_RkbbMKpvEee0e-homK-IiA"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_ToEG56pvEee0e-homK-IiA" name="Orange">
+      <modelElement href="JuiceBottler.uml#_Rkhh0KpvEee0e-homK-IiA"/>
+      <keywords xmi:id="_ToEG6KpvEee0e-homK-IiA" keyword="create"/>
+      <visibility xmi:id="_ToEG6apvEee0e-homK-IiA" label="+"/>
+      <cardinality xmi:id="_ToEG6qpvEee0e-homK-IiA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_ToEG66pvEee0e-homK-IiA">
+        <modelElement href="JuiceBottler.uml#_RkiI4qpvEee0e-homK-IiA"/>
+        <type xmi:id="_ToEG7KpvEee0e-homK-IiA" name="Orange">
+          <modelElement href="JuiceBottler.uml#_RkaNEKpvEee0e-homK-IiA"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_ToEG7apvEee0e-homK-IiA" name="runProcess">
+      <modelElement href="JuiceBottler.uml#_RkiI46pvEee0e-homK-IiA"/>
+      <visibility xmi:id="_ToEG7qpvEee0e-homK-IiA" label="+"/>
+      <cardinality xmi:id="_ToEG76pvEee0e-homK-IiA" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_ToEG8KpvEee0e-homK-IiA" name="doWork">
+      <modelElement href="JuiceBottler.uml#_Rkiv8KpvEee0e-homK-IiA"/>
+      <visibility xmi:id="_ToEG8apvEee0e-homK-IiA" label="-"/>
+      <cardinality xmi:id="_ToEG8qpvEee0e-homK-IiA" label="1" max="1" min="1"/>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_TpJE-apvEee0e-homK-IiA" name="Plant" associationsOut="_TooHkKpvEee0e-homK-IiA _TpH20KpvEee0e-homK-IiA _TpJE8KpvEee0e-homK-IiA">
+    <modelElement href="JuiceBottler.uml#_RklMMKpvEee0e-homK-IiA"/>
+    <visualProperties xmi:id="_TpJE-qpvEee0e-homK-IiA" position="74.0,614.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_TpJE-6pvEee0e-homK-IiA" label="+"/>
+    <attributes xmi:id="_TpJE_KpvEee0e-homK-IiA" defaultValue="5 * 1000" name="PROCESSING_TIME" staticAttribute="true">
+      <modelElement href="JuiceBottler.uml#_RnQswKpvEee0e-homK-IiA"/>
+      <visibility xmi:id="_TpJE_apvEee0e-homK-IiA" label="+"/>
+      <cardinality xmi:id="_TpJE_qpvEee0e-homK-IiA" label="1" max="1" min="1"/>
+      <type xmi:id="_TpJE_6pvEee0e-homK-IiA" name="long">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_TpJFAKpvEee0e-homK-IiA" defaultValue="new AssemblyLine[4]" name="lines" staticAttribute="true">
+      <modelElement href="JuiceBottler.uml#_RnRT0KpvEee0e-homK-IiA"/>
+      <stereotypes xmi:id="_HPefIKqnEeeAkbNgY_9L2Q" name="Array"/>
+      <stereotypes xmi:id="_HPfGMKqnEeeAkbNgY_9L2Q" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_HPgUUKqnEeeAkbNgY_9L2Q" name="Array"/>
+      <stereotypes xmi:id="_HPg7YKqnEeeAkbNgY_9L2Q" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_HPyoMKqnEeeAkbNgY_9L2Q" name="Array"/>
+      <stereotypes xmi:id="_HPzPQKqnEeeAkbNgY_9L2Q" name="LegacyStyledElement"/>
+      <visibility xmi:id="_TpJFA6pvEee0e-homK-IiA" label="+"/>
+      <cardinality xmi:id="_TpJFBKpvEee0e-homK-IiA" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_TpJFBapvEee0e-homK-IiA" name="AssemblyLine">
+        <modelElement href="JuiceBottler.uml#_RkMKoKpvEee0e-homK-IiA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_TpJFBqpvEee0e-homK-IiA" defaultValue="2" name="NUM_PLANTS" staticAttribute="true">
+      <modelElement href="JuiceBottler.uml#_RnSh8KpvEee0e-homK-IiA"/>
+      <visibility xmi:id="_TpJFB6pvEee0e-homK-IiA" label="+"/>
+      <cardinality xmi:id="_TpJFCKpvEee0e-homK-IiA" label="1" max="1" min="1"/>
+      <type xmi:id="_TpJFCapvEee0e-homK-IiA" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_TpJFCqpvEee0e-homK-IiA" defaultValue="3" name="ORANGES_PER_BOTTLE">
+      <modelElement href="JuiceBottler.uml#_RnTJAKpvEee0e-homK-IiA"/>
+      <stereotypes xmi:id="_TpJFC6pvEee0e-homK-IiA" name="LegacyStyledElement">
+        <modelElement href="JuiceBottler.uml#_RnTJAqpvEee0e-homK-IiA"/>
+      </stereotypes>
+      <visibility xmi:id="_TpJFDKpvEee0e-homK-IiA" label="+"/>
+      <cardinality xmi:id="_TpJFDapvEee0e-homK-IiA" label="1" max="1" min="1"/>
+      <type xmi:id="_TpJFDqpvEee0e-homK-IiA" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_TpJFD6pvEee0e-homK-IiA" defaultValue="new Worker[5]" name="worker" staticAttribute="true">
+      <modelElement href="JuiceBottler.uml#_RnTwEKpvEee0e-homK-IiA"/>
+      <stereotypes xmi:id="_HPiJgKqnEeeAkbNgY_9L2Q" name="Array"/>
+      <stereotypes xmi:id="_HPiJgaqnEeeAkbNgY_9L2Q" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_HPjXoKqnEeeAkbNgY_9L2Q" name="Array"/>
+      <stereotypes xmi:id="_HPj-sKqnEeeAkbNgY_9L2Q" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_HP1rgKqnEeeAkbNgY_9L2Q" name="Array"/>
+      <stereotypes xmi:id="_HP2SkKqnEeeAkbNgY_9L2Q" name="LegacyStyledElement"/>
+      <visibility xmi:id="_TpJFEqpvEee0e-homK-IiA" label="+"/>
+      <cardinality xmi:id="_TpJFE6pvEee0e-homK-IiA" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_TpJFFKpvEee0e-homK-IiA" name="Worker">
+        <modelElement href="JuiceBottler.uml#_RkvkQKpvEee0e-homK-IiA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_TpJFFapvEee0e-homK-IiA" name="thread">
+      <modelElement href="JuiceBottler.uml#_RnU-MapvEee0e-homK-IiA"/>
+      <stereotypes xmi:id="_HPlz4KqnEeeAkbNgY_9L2Q" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_HPnCAKqnEeeAkbNgY_9L2Q" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_HP3gsKqnEeeAkbNgY_9L2Q" name="LegacyStyledElement"/>
+      <visibility xmi:id="_TpJFF6pvEee0e-homK-IiA" label="-"/>
+      <cardinality xmi:id="_TpJFGKpvEee0e-homK-IiA" label="1" max="1" min="1"/>
+      <type xmi:id="_TpJFGapvEee0e-homK-IiA" name="Thread">
+        <modelElement href="JuiceBottler.uml#_Rm9x0apvEee0e-homK-IiA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_TpJFGqpvEee0e-homK-IiA" defaultValue="new int[1]" name="orangesProvided" staticAttribute="true">
+      <modelElement href="JuiceBottler.uml#_RnVlQapvEee0e-homK-IiA"/>
+      <stereotypes xmi:id="_TpJFG6pvEee0e-homK-IiA" name="Array">
+        <modelElement href="JuiceBottler.uml#_RnVlQ6pvEee0e-homK-IiA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_TpJFHKpvEee0e-homK-IiA" name="LegacyStyledElement">
+        <modelElement href="JuiceBottler.uml#_RnWMUapvEee0e-homK-IiA"/>
+      </stereotypes>
+      <visibility xmi:id="_TpJFHapvEee0e-homK-IiA" label="+"/>
+      <cardinality xmi:id="_TpJFHqpvEee0e-homK-IiA" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_TpJFH6pvEee0e-homK-IiA" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_TpJFIKpvEee0e-homK-IiA" defaultValue="new int[1]" name="orangesProcessed" staticAttribute="true">
+      <modelElement href="JuiceBottler.uml#_RnWMUqpvEee0e-homK-IiA"/>
+      <stereotypes xmi:id="_TpJFIapvEee0e-homK-IiA" name="Array">
+        <modelElement href="JuiceBottler.uml#_RnWzYKpvEee0e-homK-IiA"/>
+      </stereotypes>
+      <stereotypes xmi:id="_TpJFIqpvEee0e-homK-IiA" name="LegacyStyledElement">
+        <modelElement href="JuiceBottler.uml#_RnWzYqpvEee0e-homK-IiA"/>
+      </stereotypes>
+      <visibility xmi:id="_TpJFI6pvEee0e-homK-IiA" label="+"/>
+      <cardinality xmi:id="_TpJFJKpvEee0e-homK-IiA" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_TpJFJapvEee0e-homK-IiA" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_TpJFJqpvEee0e-homK-IiA" comments="_qSjsYKpwEee0e-homK-IiA" targetConnectionVisual="_qSkTcKpwEee0e-homK-IiA" name="main" staticOperation="true">
+      <modelElement href="JuiceBottler.uml#_RkmaUKpvEee0e-homK-IiA"/>
+      <visibility xmi:id="_TpJFJ6pvEee0e-homK-IiA" label="+"/>
+      <cardinality xmi:id="_TpJFKKpvEee0e-homK-IiA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_TpJFKapvEee0e-homK-IiA" name="args">
+        <modelElement href="JuiceBottler.uml#_RkmaUapvEee0e-homK-IiA"/>
+        <cardinality xmi:id="_TpJFKqpvEee0e-homK-IiA" label="1..*" max="-1" min="1"/>
+        <type xmi:id="_TpJFK6pvEee0e-homK-IiA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_TpJFLKpvEee0e-homK-IiA" comments="_qTjx8KpwEee0e-homK-IiA" targetConnectionVisual="_qTuKAKpwEee0e-homK-IiA" name="delay" staticOperation="true">
+      <modelElement href="JuiceBottler.uml#_RknBYKpvEee0e-homK-IiA"/>
+      <visibility xmi:id="_TpJFLapvEee0e-homK-IiA" label="-"/>
+      <cardinality xmi:id="_TpJFLqpvEee0e-homK-IiA" label="1" max="1" min="1"/>
+      <parameters xmi:id="_TpJFL6pvEee0e-homK-IiA" name="time">
+        <modelElement href="JuiceBottler.uml#_RknBYapvEee0e-homK-IiA"/>
+        <cardinality xmi:id="_TpJFMKpvEee0e-homK-IiA" label="1" max="1" min="1"/>
+        <type xmi:id="_TpJFMapvEee0e-homK-IiA" name="long">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_TpJFMqpvEee0e-homK-IiA" name="errMsg">
+        <modelElement href="JuiceBottler.uml#_RknBYqpvEee0e-homK-IiA"/>
+        <cardinality xmi:id="_TpJFM6pvEee0e-homK-IiA" label="1" max="1" min="1"/>
+        <type xmi:id="_TpJFNKpvEee0e-homK-IiA" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_TpJFNapvEee0e-homK-IiA" name="Plant">
+      <modelElement href="JuiceBottler.uml#_RkoPgKpvEee0e-homK-IiA"/>
+      <keywords xmi:id="_TpJFNqpvEee0e-homK-IiA" keyword="create"/>
+      <visibility xmi:id="_TpJFN6pvEee0e-homK-IiA" label="~"/>
+      <cardinality xmi:id="_TpJFOKpvEee0e-homK-IiA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_TpJFOapvEee0e-homK-IiA">
+        <modelElement href="JuiceBottler.uml#_Rko2kapvEee0e-homK-IiA"/>
+        <type xmi:id="_TpJFOqpvEee0e-homK-IiA" name="Plant">
+          <modelElement href="JuiceBottler.uml#_RklMMKpvEee0e-homK-IiA"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_TpJFO6pvEee0e-homK-IiA" name="startPlant">
+      <modelElement href="JuiceBottler.uml#_Rko2kqpvEee0e-homK-IiA"/>
+      <visibility xmi:id="_TpJFPKpvEee0e-homK-IiA" label="+"/>
+      <cardinality xmi:id="_TpJFPapvEee0e-homK-IiA" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_TpJFPqpvEee0e-homK-IiA" name="stopPlant">
+      <modelElement href="JuiceBottler.uml#_RkpdoKpvEee0e-homK-IiA"/>
+      <visibility xmi:id="_TpJFP6pvEee0e-homK-IiA" label="+"/>
+      <cardinality xmi:id="_TpJFQKpvEee0e-homK-IiA" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_TpJFQapvEee0e-homK-IiA" name="waitToStop">
+      <modelElement href="JuiceBottler.uml#_RkpdoapvEee0e-homK-IiA"/>
+      <visibility xmi:id="_TpJFQqpvEee0e-homK-IiA" label="+"/>
+      <cardinality xmi:id="_TpJFQ6pvEee0e-homK-IiA" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_TpJFRKpvEee0e-homK-IiA" name="run">
+      <modelElement href="JuiceBottler.uml#_RkpdoqpvEee0e-homK-IiA"/>
+      <visibility xmi:id="_TpJFRapvEee0e-homK-IiA" label="+"/>
+      <cardinality xmi:id="_TpJFRqpvEee0e-homK-IiA" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_TpJFR6pvEee0e-homK-IiA" name="getProvidedOranges">
+      <modelElement href="JuiceBottler.uml#_RkqEsKpvEee0e-homK-IiA"/>
+      <visibility xmi:id="_TpJFSKpvEee0e-homK-IiA" label="+"/>
+      <cardinality xmi:id="_TpJFSapvEee0e-homK-IiA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_TpJFSqpvEee0e-homK-IiA">
+        <modelElement href="JuiceBottler.uml#_RkqEsapvEee0e-homK-IiA"/>
+        <type xmi:id="_TpJFS6pvEee0e-homK-IiA" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_TpJFTKpvEee0e-homK-IiA" name="getProcessedOranges">
+      <modelElement href="JuiceBottler.uml#_RkqrwKpvEee0e-homK-IiA"/>
+      <visibility xmi:id="_TpJFTapvEee0e-homK-IiA" label="+"/>
+      <cardinality xmi:id="_TpJFTqpvEee0e-homK-IiA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_TpJFT6pvEee0e-homK-IiA">
+        <modelElement href="JuiceBottler.uml#_RkqrwapvEee0e-homK-IiA"/>
+        <type xmi:id="_TpJFUKpvEee0e-homK-IiA" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_TpJFUapvEee0e-homK-IiA" name="getBottles">
+      <modelElement href="JuiceBottler.uml#_RkqrwqpvEee0e-homK-IiA"/>
+      <visibility xmi:id="_TpJFUqpvEee0e-homK-IiA" label="+"/>
+      <cardinality xmi:id="_TpJFU6pvEee0e-homK-IiA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_TpJFVKpvEee0e-homK-IiA">
+        <modelElement href="JuiceBottler.uml#_RkrS0KpvEee0e-homK-IiA"/>
+        <type xmi:id="_TpJFVapvEee0e-homK-IiA" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_TpJFVqpvEee0e-homK-IiA" name="getWaste">
+      <modelElement href="JuiceBottler.uml#_RkrS0apvEee0e-homK-IiA"/>
+      <visibility xmi:id="_TpJFV6pvEee0e-homK-IiA" label="+"/>
+      <cardinality xmi:id="_TpJFWKpvEee0e-homK-IiA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_TpJFWapvEee0e-homK-IiA">
+        <modelElement href="JuiceBottler.uml#_RkrS0qpvEee0e-homK-IiA"/>
+        <type xmi:id="_TpJFWqpvEee0e-homK-IiA" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_TqPRIKpvEee0e-homK-IiA" name="Worker" associationsIn="_TpH20KpvEee0e-homK-IiA" associationsOut="_TpoNIKpvEee0e-homK-IiA _Tp8WMKpvEee0e-homK-IiA _TqE5FapvEee0e-homK-IiA">
+    <modelElement href="JuiceBottler.uml#_RkvkQKpvEee0e-homK-IiA"/>
+    <visualProperties xmi:id="_TqPRIapvEee0e-homK-IiA" position="10.0,110.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_TqPRIqpvEee0e-homK-IiA" label="+"/>
+    <attributes xmi:id="_TqPRI6pvEee0e-homK-IiA" name="in">
+      <modelElement href="JuiceBottler.uml#_RnXacKpvEee0e-homK-IiA"/>
+      <stereotypes xmi:id="_HPo3MKqnEeeAkbNgY_9L2Q" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_HPqFUKqnEeeAkbNgY_9L2Q" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_HP4u0KqnEeeAkbNgY_9L2Q" name="LegacyStyledElement"/>
+      <visibility xmi:id="_TqPRJapvEee0e-homK-IiA" label="+"/>
+      <cardinality xmi:id="_TqPRJqpvEee0e-homK-IiA" label="1" max="1" min="1"/>
+      <type xmi:id="_TqPRJ6pvEee0e-homK-IiA" name="AssemblyLine">
+        <modelElement href="JuiceBottler.uml#_RkMKoKpvEee0e-homK-IiA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_TqPRKKpvEee0e-homK-IiA" name="out">
+      <modelElement href="JuiceBottler.uml#_RnYBgapvEee0e-homK-IiA"/>
+      <stereotypes xmi:id="_HPrTcKqnEeeAkbNgY_9L2Q" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_HPtIoKqnEeeAkbNgY_9L2Q" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_HP588KqnEeeAkbNgY_9L2Q" name="LegacyStyledElement"/>
+      <visibility xmi:id="_TqPRKqpvEee0e-homK-IiA" label="+"/>
+      <cardinality xmi:id="_TqPRK6pvEee0e-homK-IiA" label="1" max="1" min="1"/>
+      <type xmi:id="_TqPRLKpvEee0e-homK-IiA" name="AssemblyLine">
+        <modelElement href="JuiceBottler.uml#_RkMKoKpvEee0e-homK-IiA"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_TqPRLapvEee0e-homK-IiA" name="role">
+      <modelElement href="JuiceBottler.uml#_RnYokapvEee0e-homK-IiA"/>
+      <stereotypes xmi:id="_TqPRLqpvEee0e-homK-IiA" name="LegacyStyledElement">
+        <modelElement href="JuiceBottler.uml#_RnZPoKpvEee0e-homK-IiA"/>
+      </stereotypes>
+      <visibility xmi:id="_TqPRL6pvEee0e-homK-IiA" label="+"/>
+      <cardinality xmi:id="_TqPRMKpvEee0e-homK-IiA" label="1" max="1" min="1"/>
+      <type xmi:id="_TqPRMapvEee0e-homK-IiA" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_TqPRMqpvEee0e-homK-IiA" defaultValue="false" name="timeToWork">
+      <modelElement href="JuiceBottler.uml#_RnZPoapvEee0e-homK-IiA"/>
+      <stereotypes xmi:id="_TqPRM6pvEee0e-homK-IiA" name="LegacyStyledElement">
+        <modelElement href="JuiceBottler.uml#_RnZ2sapvEee0e-homK-IiA"/>
+      </stereotypes>
+      <visibility xmi:id="_TqPRNKpvEee0e-homK-IiA" label="+"/>
+      <cardinality xmi:id="_TqPRNapvEee0e-homK-IiA" label="1" max="1" min="1"/>
+      <type xmi:id="_TqPRNqpvEee0e-homK-IiA" name="boolean">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_TqPRN6pvEee0e-homK-IiA" name="thread">
+      <modelElement href="JuiceBottler.uml#_RnZ2sqpvEee0e-homK-IiA"/>
+      <stereotypes xmi:id="_HPu90KqnEeeAkbNgY_9L2Q" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_HPwL8KqnEeeAkbNgY_9L2Q" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_HP7LEKqnEeeAkbNgY_9L2Q" name="LegacyStyledElement"/>
+      <visibility xmi:id="_TqPROapvEee0e-homK-IiA" label="+"/>
+      <cardinality xmi:id="_TqPROqpvEee0e-homK-IiA" label="1" max="1" min="1"/>
+      <type xmi:id="_TqPRO6pvEee0e-homK-IiA" name="Thread">
+        <modelElement href="JuiceBottler.uml#_Rm9x0apvEee0e-homK-IiA"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_TqPRPKpvEee0e-homK-IiA" name="Worker">
+      <modelElement href="JuiceBottler.uml#_RkyAgKpvEee0e-homK-IiA"/>
+      <keywords xmi:id="_TqPRPapvEee0e-homK-IiA" keyword="create"/>
+      <visibility xmi:id="_TqPRPqpvEee0e-homK-IiA" label="~"/>
+      <cardinality xmi:id="_TqPRP6pvEee0e-homK-IiA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_TqPRQKpvEee0e-homK-IiA">
+        <modelElement href="JuiceBottler.uml#_RkyAg6pvEee0e-homK-IiA"/>
+        <type xmi:id="_TqPRQapvEee0e-homK-IiA" name="Worker">
+          <modelElement href="JuiceBottler.uml#_RkvkQKpvEee0e-homK-IiA"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_TqPRQqpvEee0e-homK-IiA" name="startWorker">
+      <modelElement href="JuiceBottler.uml#_RkynkKpvEee0e-homK-IiA"/>
+      <visibility xmi:id="_TqPRQ6pvEee0e-homK-IiA" label="+"/>
+      <cardinality xmi:id="_TqPRRKpvEee0e-homK-IiA" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_TqPRRapvEee0e-homK-IiA" name="stopWorker">
+      <modelElement href="JuiceBottler.uml#_RkynkapvEee0e-homK-IiA"/>
+      <visibility xmi:id="_TqPRRqpvEee0e-homK-IiA" label="+"/>
+      <cardinality xmi:id="_TqPRR6pvEee0e-homK-IiA" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_TqPRSKpvEee0e-homK-IiA" name="waitToStop">
+      <modelElement href="JuiceBottler.uml#_RkzOoKpvEee0e-homK-IiA"/>
+      <visibility xmi:id="_TqPRSapvEee0e-homK-IiA" label="+"/>
+      <cardinality xmi:id="_TqPRSqpvEee0e-homK-IiA" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_TqPRS6pvEee0e-homK-IiA" name="run">
+      <modelElement href="JuiceBottler.uml#_Rkz1sKpvEee0e-homK-IiA"/>
+      <visibility xmi:id="_TqPRTKpvEee0e-homK-IiA" label="+"/>
+      <cardinality xmi:id="_TqPRTapvEee0e-homK-IiA" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_TqPRTqpvEee0e-homK-IiA" name="fetchOrange">
+      <modelElement href="JuiceBottler.uml#_Rkz1sapvEee0e-homK-IiA"/>
+      <visibility xmi:id="_TqPRT6pvEee0e-homK-IiA" label="+"/>
+      <cardinality xmi:id="_TqPRUKpvEee0e-homK-IiA" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_TqPRUapvEee0e-homK-IiA" name="peelOrange">
+      <modelElement href="JuiceBottler.uml#_Rkz1sqpvEee0e-homK-IiA"/>
+      <visibility xmi:id="_TqPRUqpvEee0e-homK-IiA" label="+"/>
+      <cardinality xmi:id="_TqPRU6pvEee0e-homK-IiA" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_TqPRVKpvEee0e-homK-IiA" name="squeezeOrange">
+      <modelElement href="JuiceBottler.uml#_Rk0cwKpvEee0e-homK-IiA"/>
+      <visibility xmi:id="_TqPRVapvEee0e-homK-IiA" label="+"/>
+      <cardinality xmi:id="_TqPRVqpvEee0e-homK-IiA" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_TqPRV6pvEee0e-homK-IiA" name="bottleOrange">
+      <modelElement href="JuiceBottler.uml#_Rk0cwapvEee0e-homK-IiA"/>
+      <visibility xmi:id="_TqPRWKpvEee0e-homK-IiA" label="+"/>
+      <cardinality xmi:id="_TqPRWapvEee0e-homK-IiA" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_TqPRWqpvEee0e-homK-IiA" name="processOrange">
+      <modelElement href="JuiceBottler.uml#_Rk1D0KpvEee0e-homK-IiA"/>
+      <visibility xmi:id="_TqPRW6pvEee0e-homK-IiA" label="+"/>
+      <cardinality xmi:id="_TqPRXKpvEee0e-homK-IiA" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_TqPRXapvEee0e-homK-IiA" name="Worker">
+      <modelElement href="JuiceBottler.uml#_Rm4SQKpvEee0e-homK-IiA"/>
+      <keywords xmi:id="_TqPRXqpvEee0e-homK-IiA" keyword="create"/>
+      <visibility xmi:id="_TqPRX6pvEee0e-homK-IiA" label="+"/>
+      <cardinality xmi:id="_TqPRYKpvEee0e-homK-IiA" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_TqPRYapvEee0e-homK-IiA">
+        <modelElement href="JuiceBottler.uml#_Rm45VapvEee0e-homK-IiA"/>
+        <type xmi:id="_TqPRYqpvEee0e-homK-IiA" name="Worker">
+          <modelElement href="JuiceBottler.uml#_RkvkQKpvEee0e-homK-IiA"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_TqPRY6pvEee0e-homK-IiA" name="in">
+        <modelElement href="JuiceBottler.uml#_Rm45UKpvEee0e-homK-IiA"/>
+        <cardinality xmi:id="_TqPRZKpvEee0e-homK-IiA" label="1" max="1" min="1"/>
+        <type xmi:id="_TqPRZapvEee0e-homK-IiA" name="AssemblyLine">
+          <modelElement href="JuiceBottler.uml#_RkMKoKpvEee0e-homK-IiA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_TqPRZqpvEee0e-homK-IiA" name="out">
+        <modelElement href="JuiceBottler.uml#_Rm45UapvEee0e-homK-IiA"/>
+        <cardinality xmi:id="_TqPRZ6pvEee0e-homK-IiA" label="1" max="1" min="1"/>
+        <type xmi:id="_TqPRaKpvEee0e-homK-IiA" name="AssemblyLine">
+          <modelElement href="JuiceBottler.uml#_RkMKoKpvEee0e-homK-IiA"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_TqPRaapvEee0e-homK-IiA" name="role">
+        <modelElement href="JuiceBottler.uml#_Rm45UqpvEee0e-homK-IiA"/>
+        <cardinality xmi:id="_TqPRaqpvEee0e-homK-IiA" label="1" max="1" min="1"/>
+        <type xmi:id="_TqPRa6pvEee0e-homK-IiA" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_qSjsYKpwEee0e-homK-IiA" sourceConnectionVisual="_qSkTcKpwEee0e-homK-IiA" text="Main Thread&#xA;&#x9; * creates an array of plants&#xA;&#x9; * Initializes The Assembly Line used for all threads of plant and workers&#xA;&#x9; * Initializes plants and starts their run. &#xA;&#x9; * Runs for PROCESSING_TIME seconds&#xA;&#x9; * after the time, it stops the workers and plants then outputs the results&#xA;&#x9; * Then exits the system to clean up." item="_TpJFJqpvEee0e-homK-IiA">
+    <modelElement href="JuiceBottler.uml#_qShQIKpwEee0e-homK-IiA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_qTjx8KpwEee0e-homK-IiA" sourceConnectionVisual="_qTuKAKpwEee0e-homK-IiA" text="delay method &#xA;&#x9; * @param time&#xA;&#x9; * @param errMsg" item="_TpJFLKpvEee0e-homK-IiA">
+    <modelElement href="JuiceBottler.uml#_RnqVYqpvEee0e-homK-IiA"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_bytLQKqqEeeAkbNgY_9L2Q" sourceConnectionVisual="_byxcsKqqEeeAkbNgY_9L2Q" text="Initialize the arraylist as a new arraylist for each conveyor belt." item="_TnKvCKpvEee0e-homK-IiA">
+    <modelElement href="JuiceBottler.uml#_byjaQKqqEeeAkbNgY_9L2Q"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_by8b0KqqEeeAkbNgY_9L2Q" sourceConnectionVisual="_bzl8EKqqEeeAkbNgY_9L2Q" text="Add an orange to the ArrayList&#xD;&#xA;&#x9; * &#xD;&#xA;&#x9; * @param o" item="_TnKvGqpvEee0e-homK-IiA">
+    <modelElement href="JuiceBottler.uml#_bykoYKqqEeeAkbNgY_9L2Q"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_bzrboKqqEeeAkbNgY_9L2Q" sourceConnectionVisual="_b0TtwKqqEeeAkbNgY_9L2Q" text="Gets the first orange in the sequence&#xD;&#xA;&#x9; * &#xD;&#xA;&#x9; * @return" item="_TnKvDqpvEee0e-homK-IiA">
+    <modelElement href="JuiceBottler.uml#_bylPcKqqEeeAkbNgY_9L2Q"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_b0bCgKqqEeeAkbNgY_9L2Q" sourceConnectionVisual="_b0fT8KqqEeeAkbNgY_9L2Q" text="Count the total number of oranges in the ArrayList&#xD;&#xA;&#x9; * &#xD;&#xA;&#x9; * @return" item="_TnKvFKpvEee0e-homK-IiA">
+    <modelElement href="JuiceBottler.uml#_byl2gKqqEeeAkbNgY_9L2Q"/>
+  </nodes>
+</com.yattasolutions.uml.diagrams.classifier:ClassDiagram>

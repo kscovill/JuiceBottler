@@ -1,3 +1,10 @@
+/**
+ * Plant Class that is the backbone of the entire project. each plant creates
+ * and manages workers while the main method controls the timeline
+ * 
+ * @author Kyle
+ *
+ */
 public class Plant implements Runnable {
 	// How long do we want to run the juice processing
 	public static final long PROCESSING_TIME = 5 * 1000;
@@ -5,17 +12,19 @@ public class Plant implements Runnable {
 	private static final int NUM_PLANTS = 2;
 
 	/**
-	 * Main Thread
-	 * @param args
+	 * Main Thread creates an array of plants Initializes The Assembly Line used for
+	 * all threads of plant and workers Initializes plants and starts their run.
+	 * Runs for PROCESSING_TIME seconds after the time, it stops the workers and
+	 * plants then outputs the results Then exits the system to clean up.
 	 */
 	public static void main(String[] args) {
 		// Startup the plants
 		Plant[] plants = new Plant[NUM_PLANTS];
-		
+
 		for (int i = 0; i < 4; i++) {
 			lines[i] = new AssemblyLine();
 		}
-		
+
 		for (int i = 0; i < NUM_PLANTS; i++) {
 			try {
 				Thread.sleep(20);
@@ -27,8 +36,6 @@ public class Plant implements Runnable {
 			plants[i].startPlant();
 		}
 
-		
-
 		// Give the plants time to do work
 		delay(PROCESSING_TIME, "Plant malfunction");
 
@@ -39,8 +46,9 @@ public class Plant implements Runnable {
 		for (Plant p : plants) {
 			p.waitToStop();
 		}
-		
-		for(int i = 0; i < 5; i++) {
+
+		// Wait for workers to stop
+		for (int i = 0; i < 5; i++) {
 			worker[i].waitToStop();
 		}
 
@@ -60,6 +68,12 @@ public class Plant implements Runnable {
 		System.exit(1);
 	}
 
+	/**
+	 * delay method to let the program run for n seconds
+	 * 
+	 * @param time
+	 * @param errMsg
+	 */
 	private static void delay(long time, String errMsg) {
 		long sleepTime = Math.max(1, time);
 		try {
@@ -75,41 +89,59 @@ public class Plant implements Runnable {
 	public static int[] orangesProvided = new int[1];
 	public static int[] orangesProcessed = new int[1];
 
-
+	/**
+	 * constructor for Plant Resets Variables orangesProvided and orangesProcessed
+	 * and initializes a new thread for each plant
+	 */
 	Plant() {
 		orangesProvided[0] = 0;
 		orangesProcessed[0] = 0;
 		thread = new Thread(this, "Master");
 	}
 
+	/**
+	 * start the plant thread ( go to run )
+	 * 
+	 */
 	public void startPlant() {
-		
+
 		thread.start();
 	}
 
+	/**
+	 * Stops the worker threads inside the plant thread Then waits for all worker
+	 * threads to finish
+	 */
 	public void stopPlant() {
-		
-		for(int i = 0; i < 5; i++) {
+		// Stop all Workers
+		for (int i = 0; i < 5; i++) {
 			worker[i].stopWorker();
 		}
-		
-		for(int i = 0; i < 5; i++) {
+		// Wait for workers to stop
+		for (int i = 0; i < 5; i++) {
 			worker[i].waitToStop();
 		}
-		
+
 	}
 
+	/**
+	 * Waits for all plant threads to stop
+	 */
 	public void waitToStop() {
 		try {
 			thread.join();
-			//System.out.println("Plant has died( should be 2 )");
+			// System.out.println("Plant has died( should be 2 )");
 		} catch (InterruptedException e) {
 			System.err.println(thread.getName() + " stop malfunction");
 		}
 	}
 
+	/**
+	 * Creates, initializes, and starts all workers
+	 */
 	public void run() {
-		//System.out.println("The " + Thread.currentThread().getName() + " has begun to buy slaves");
+		// System.out.println("The " + Thread.currentThread().getName() + " has begun to
+		// buy slaves");
 
 		worker[0] = new Worker(null, lines[0], 0);
 		worker[0].startWorker();
@@ -124,19 +156,38 @@ public class Plant implements Runnable {
 		worker[4].thread.start();
 	}
 
+	/**
+	 * 
+	 * @return providedOranges
+	 */
 	public int getProvidedOranges() {
 
 		return orangesProvided[0];
 	}
 
+	/**
+	 * get the processedOranges
+	 * 
+	 * @return
+	 */
 	public int getProcessedOranges() {
 		return orangesProcessed[0];
 	}
 
+	/**
+	 * Get the bottles
+	 * 
+	 * @return
+	 */
 	public int getBottles() {
 		return orangesProcessed[0] / ORANGES_PER_BOTTLE;
 	}
 
+	/**
+	 * Get the waste
+	 * 
+	 * @return
+	 */
 	public int getWaste() {
 		return orangesProcessed[0] % ORANGES_PER_BOTTLE;
 	}

@@ -1,0 +1,8 @@
+	For this lab, I began by trying to understand the given Plant class and how it creates threads and be able to replicate that.
+Once I understood it, i almost copied it directly for the worker class and began to tweak it in the run method to make it do what i want.
+One problem I had was deciding which worker would do which step. I solved this by adding another parameter to the worker constructor that
+told which worker it was, alternatively I could've set a worker Id every time I created a worker or in a for loop somewhere else before i started
+the workers. After that it was just figuring out what was causing IllegalThreadStateExceptions and NullPointerExceptions. I solved this by adding 
+a small wait between plant classes. With having a plant that has 5 workers where each worker does a single job thus accomplishing the goal of no worker can 
+complete an entire orange. It also runs in threads, or in Parallel and has the ability to run multiple plants.I wrote probably 95% or more of my code, 
+but I did receive help with code from Cordell Anderson and bounced ideas back and forth with Natalie Husband to understand what was needed. 
