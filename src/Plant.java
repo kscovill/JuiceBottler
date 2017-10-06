@@ -56,10 +56,7 @@ public class Plant implements Runnable {
 		}
 		System.out.println("Total provided/processed = " + totalProvided + "/" + totalProcessed);
 		System.out.println("Created " + totalBottles + ", wasted " + totalWasted + " oranges");
-		
-		// Fix by Natalie to exit program
-		//System.exit(1);
-	}
+		}
 
 	/**
 	 * delay method to let the program run for n seconds
