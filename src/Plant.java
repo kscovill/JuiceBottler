@@ -21,17 +21,12 @@ public class Plant implements Runnable {
 		// Startup the plants
 		Plant[] plants = new Plant[NUM_PLANTS];
 
+		//start up the assembly line
 		for (int i = 0; i < 4; i++) {
 			lines[i] = new AssemblyLine();
 		}
 
 		for (int i = 0; i < NUM_PLANTS; i++) {
-			try {
-				Thread.sleep(20);
-			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
 			plants[i] = new Plant();
 			plants[i].startPlant();
 		}
@@ -47,10 +42,6 @@ public class Plant implements Runnable {
 			p.waitToStop();
 		}
 
-		// Wait for workers to stop
-		for (int i = 0; i < 5; i++) {
-			worker[i].waitToStop();
-		}
 
 		// Summarize the results
 		int totalProvided = 0;
@@ -65,7 +56,9 @@ public class Plant implements Runnable {
 		}
 		System.out.println("Total provided/processed = " + totalProvided + "/" + totalProcessed);
 		System.out.println("Created " + totalBottles + ", wasted " + totalWasted + " oranges");
-		System.exit(1);
+		
+		// Fix by Natalie to exit program
+		//System.exit(1);
 	}
 
 	/**
@@ -84,9 +77,9 @@ public class Plant implements Runnable {
 	}
 
 	public final int ORANGES_PER_BOTTLE = 3;
-	public static Worker[] worker = new Worker[5];
+	public Worker[] worker = new Worker[5];
 	private final Thread thread;
-	public static int[] orangesProvided = new int[1];
+	public static int orangesProvided;
 	public static int[] orangesProcessed = new int[1];
 
 	/**
@@ -94,7 +87,7 @@ public class Plant implements Runnable {
 	 * and initializes a new thread for each plant
 	 */
 	Plant() {
-		orangesProvided[0] = 0;
+		orangesProvided = 0;
 		orangesProcessed[0] = 0;
 		thread = new Thread(this, "Master");
 	}
@@ -117,11 +110,7 @@ public class Plant implements Runnable {
 		for (int i = 0; i < 5; i++) {
 			worker[i].stopWorker();
 		}
-		// Wait for workers to stop
-		for (int i = 0; i < 5; i++) {
-			worker[i].waitToStop();
-		}
-
+		
 	}
 
 	/**
@@ -130,30 +119,29 @@ public class Plant implements Runnable {
 	public void waitToStop() {
 		try {
 			thread.join();
-			// System.out.println("Plant has died( should be 2 )");
 		} catch (InterruptedException e) {
 			System.err.println(thread.getName() + " stop malfunction");
 		}
+		// Wait for workers to stop
+				for (int i = 0; i < 5; i++) {
+					worker[i].waitToStop();
+				}
+
 	}
 
 	/**
 	 * Creates, initializes, and starts all workers
 	 */
 	public void run() {
-		// System.out.println("The " + Thread.currentThread().getName() + " has begun to
-		// buy slaves");
 
 		worker[0] = new Worker(null, lines[0], 0);
 		worker[0].startWorker();
-		worker[0].thread.start();
 		for (int i = 1; i < 4; i++) {
 			worker[i] = new Worker(lines[i - 1], lines[i], i);
 			worker[i].startWorker();
-			worker[i].thread.start();
 		}
 		worker[4] = new Worker(lines[3], null, 4);
 		worker[4].startWorker();
-		worker[4].thread.start();
 	}
 
 	/**
@@ -162,7 +150,7 @@ public class Plant implements Runnable {
 	 */
 	public int getProvidedOranges() {
 
-		return orangesProvided[0];
+		return orangesProvided;
 	}
 
 	/**

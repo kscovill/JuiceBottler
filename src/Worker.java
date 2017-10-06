@@ -41,15 +41,13 @@ public class Worker implements Runnable {
 	 */
 	public void startWorker() {
 		timeToWork = true;
-		// System.out.println("This has started( should be 10 )");
-		// thread.start();
+		thread.start();
 	}
 
 	/**
 	 * Stop the worker
 	 */
 	public void stopWorker() {
-		// System.out.println("This has stopped( should be 10 )");
 		timeToWork = false;
 	}
 
@@ -59,7 +57,6 @@ public class Worker implements Runnable {
 	public void waitToStop() {
 		try {
 			thread.join();
-			// System.out.println("This has died( should be 10 )");
 		} catch (InterruptedException e) {
 			System.err.println(thread.getName() + " stop malfunction");
 		}
@@ -69,8 +66,6 @@ public class Worker implements Runnable {
 	 * decides which job this worker is to do.
 	 */
 	public void run() {
-		// System.out.println("The " + Thread.currentThread().getName() + " is
-		// Processing oranges");
 		while (timeToWork) {
 			if (role == 0) {
 				fetchOrange();
@@ -91,7 +86,7 @@ public class Worker implements Runnable {
 	 */
 	public void fetchOrange() {
 		Orange o = new Orange();
-		Plant.orangesProvided[0]++;
+		Plant.orangesProvided++;
 		out.addOrange(o);
 	}
 
@@ -116,6 +111,8 @@ public class Worker implements Runnable {
 		if (o.getState() == Orange.State.Peeled) {
 			o.runProcess();
 			out.addOrange(o);
+		}else {
+			System.err.println("THERE WAS A BAD ORANGE");
 		}
 	}
 
@@ -128,6 +125,8 @@ public class Worker implements Runnable {
 		if (o.getState() == Orange.State.Squeezed) {
 			o.runProcess();
 			out.addOrange(o);
+		}else {
+			System.err.println("THERE WAS A BAD ORANGE");
 		}
 	}
 
@@ -141,7 +140,8 @@ public class Worker implements Runnable {
 		if (o.getState() == Orange.State.Bottled) {
 			o.runProcess();
 			Plant.orangesProcessed[0]++;
-
+		}else {
+			System.err.println("THERE WAS A BAD ORANGE");
 		}
 	}
 }

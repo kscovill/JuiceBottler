@@ -24,7 +24,7 @@ public class AssemblyLine extends Thread {
 	 */
 	public synchronized void addOrange(Orange o) {
 		oranges.add(o);
-		if (countOranges() >= 1) {
+		if (countOranges() == 1) {
 			notifyAll();
 		}
 	}
